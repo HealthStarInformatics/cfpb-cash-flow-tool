@@ -1,0 +1,80 @@
+@import "colors.scss";
+
+.site-footer-wrapper {
+  padding: 10px 20px;
+}
+
+.back-to-top-btn {
+    background-color: $grey80;
+    padding: 7px 0px;
+
+    div:first-child {
+        display:flex;
+        justify-content: center;
+
+        div {
+           align-self: center;
+           margin-right: 6px;
+        }
+    }
+}
+
+
+.top-ul,
+.bottom-ul {
+    padding-top: 5px;
+    font-size: 1.1rem;
+
+    li:first-child {
+        border-top: 1px dotted $darkgrey;
+    }
+
+    li {
+        border-bottom: 1px dotted $darkgrey;
+        padding: 5px 0px;
+    }
+}
+
+.social-media-ul {
+    display:flex;
+    flex-direction: row;
+}
+
+.footer-icon {
+    margin-right: 6px;
+}
+
+.official-website {
+    display:flex;
+    justify-content: center;
+    
+    div:first-child {
+        padding-right: 15px;
+        padding-bottom: 10px;
+    }
+
+    div {
+        align-self:center;
+    }
+}
+
+.ext-link {
+    display:flex;
+    justify-content:space-between;
+
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+

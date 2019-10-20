@@ -2533,6 +2533,24 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000980, caniuse-lite@^1.0.30000981, can
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000998.tgz#7227a8046841e7d01e156ae7227a504d065f6744"
   integrity sha512-8Tj5sPZR9kMHeDD9SZXIVr5m9ofufLLCG2Y4QwQrH18GIwG+kCc+zYdlR036ZRkuKjVVetyxeAgGA1xF7XdmzQ==
 
+capital-framework@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/capital-framework/-/capital-framework-11.0.1.tgz#7ceaa569f18945d55ee6bc208f778d8491307632"
+  integrity sha512-aUQcXg36FIQ6d2c4SGWeY1/WMulU72McndxrvmtESsUscLs9u5mXL3jjONJxfmXoFT8NVYtbLPh/jT7cNXm66w==
+  dependencies:
+    cf-atomic-component "^11.0.0"
+    cf-buttons "^11.0.1"
+    cf-core "^11.0.0"
+    cf-expandables "^11.0.1"
+    cf-forms "^11.0.1"
+    cf-grid "^11.0.0"
+    cf-icons "^11.0.1"
+    cf-layout "^11.0.0"
+    cf-notifications "^11.0.1"
+    cf-pagination "^11.0.1"
+    cf-tables "^11.0.0"
+    cf-typography "^11.0.1"
+
 capture-exit@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/capture-exit/-/capture-exit-2.0.0.tgz#fb953bfaebeb781f62898239dabb426d08a509a4"
@@ -2549,6 +2567,102 @@ caseless@~0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
+
+cf-atomic-component@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/cf-atomic-component/-/cf-atomic-component-11.0.0.tgz#e6d324d6436a65b956729e966a7e4c504a7fa806"
+  integrity sha512-U+l14BpYQvMi6fsNjkD0G9eCXXVe3RhhYUQ5HDlmnQYCOhpy9B+wOUdIJ103LuUk51QZvTXdtdkxX8gOHMMcZw==
+  dependencies:
+    ftdomdelegate "^3.0.0"
+
+cf-buttons@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/cf-buttons/-/cf-buttons-11.0.1.tgz#74cf59bc371c8ab58a2233af3d15bf16654c1544"
+  integrity sha512-8kilTdLkT/cwfaTdp2GleBX12z7Q3dj6B0N3we7hOv+byF0XSYtO4qonZyiTYI4oML3Z1FQyDMvFnOC+Ba9yAA==
+  dependencies:
+    cf-core "^11.0.0"
+    cf-icons "^11.0.1"
+
+cf-core@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/cf-core/-/cf-core-11.0.0.tgz#c8bfab6645b79747a96abd464ac1b960e8c94601"
+  integrity sha512-sH/3V/PP0pXcuqgC0sZ1kC+AlCPUsUzQAv0GnL+KCfBA7BfXMHgDq30enNEls/wwtD0lBYz8c862oVuZzdjeew==
+  dependencies:
+    normalize-css "^2.0.0"
+    normalize-legacy-addon "0.1.0"
+
+cf-expandables@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/cf-expandables/-/cf-expandables-11.0.1.tgz#8c6b6748c1f62f44ce9f771267eb1099e21cf59f"
+  integrity sha512-HLA3trFLi6vqlg+aiCD2d/MwpmDsqfQNaHrF2HKQ9aG6vbdfpQNyQZkn1r5/NpbSUfhk8QZV2o+B4wBG0EGJAQ==
+  dependencies:
+    cf-atomic-component "^11.0.0"
+    cf-core "^11.0.0"
+    cf-icons "^11.0.1"
+
+cf-forms@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/cf-forms/-/cf-forms-11.0.1.tgz#4c1f13c70bb69e194cf7672b22f33f972c73578a"
+  integrity sha512-QmbH0enOOe0ET1dtdAU3I/Ld03gR9Fx3ShEhBWJJeLGgyRUvOBPPoZJXphdVQvUad7PcYkeVW6U+hiFTpV7DWg==
+  dependencies:
+    cf-buttons "^11.0.1"
+    cf-core "^11.0.0"
+    cf-grid "^11.0.0"
+    cf-icons "^11.0.1"
+
+cf-grid@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/cf-grid/-/cf-grid-11.0.0.tgz#2c4765e09947a75b5fc1ecad5ba2793ffa54e9ed"
+  integrity sha512-X7qSJ0C8xC62o77TaAW9ajZoMIiNW5r6C4buMMbpzwrORuejVvDd3OtoQZobKYSdoWH4dWRBehymeJh4wjco+A==
+  dependencies:
+    normalize-css "^2.0.0"
+    normalize-legacy-addon "0.1.0"
+
+cf-icons@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/cf-icons/-/cf-icons-11.0.1.tgz#b42bdd82915ae501e8747d8992c0801178450335"
+  integrity sha512-K1/wThbJz1Jd7163Mk2mp8eCrwB2iuO170//eCWoUVky8KfR9XurI+2+Vjxqqn8QzIvNyoWmdtoYxy5cVxg3Fw==
+
+cf-layout@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/cf-layout/-/cf-layout-11.0.0.tgz#a321850516ae277cf7c087b9c76b33ce35ec3b61"
+  integrity sha512-gGotjMdQh7GWfQe2TEAVlMUk1NqVzajU9l3pp36elsTF4reSm1An5z6fHhH1UwQlYJ/K2KW33n7Oex8AYVAyjg==
+  dependencies:
+    cf-core "^11.0.0"
+    cf-grid "^11.0.0"
+
+cf-notifications@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/cf-notifications/-/cf-notifications-11.0.1.tgz#d953850c94400ff7f57feadfa47c9475b73daec3"
+  integrity sha512-r2/oVBa4ZWfYZgB0UfMGb/hZwge883N3AOwq96gI77l0uA6+NxSXc9hqIxrpeTz9peW0W2xNM4ZXPhikVK0HDQ==
+  dependencies:
+    cf-core "^11.0.0"
+    cf-icons "^11.0.1"
+
+cf-pagination@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/cf-pagination/-/cf-pagination-11.0.1.tgz#3b31675c64eeaed96c5a014606ff0408abba46aa"
+  integrity sha512-wlJ6MG+1Bg2MnqUJ03vAN38E3GQCltVgMjcR/vS5uE9lfZXyO69XD21xQhYNmSJwjTzFvxscC/TYuG4mMABl9Q==
+  dependencies:
+    cf-buttons "^11.0.1"
+    cf-core "^11.0.0"
+    cf-icons "^11.0.1"
+
+cf-tables@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/cf-tables/-/cf-tables-11.0.0.tgz#22073d664776db489260a34aa288f8d3ba8475fa"
+  integrity sha512-J8THCToWow/Irt1nVxEXeecIzR4YWutF43mjs6NfQ/ER8tIh+he+EmtA9Duyo1DaZIBw3ZzaCFrKPzU9tkynzw==
+  dependencies:
+    cf-atomic-component "^11.0.0"
+    cf-core "^11.0.0"
+
+cf-typography@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/cf-typography/-/cf-typography-11.0.1.tgz#0e673057f38fce3662d4093f6dd6b672da5d1188"
+  integrity sha512-7U0FfvIwYrNJwx2ptczgziPPAnuz5X6nrgg+McN4WbzDe4F/n/w5dTTiO3d5mmz136pq2Zf0qQe/Up5rJSFJLw==
+  dependencies:
+    cf-core "^11.0.0"
+    cf-icons "^11.0.1"
 
 chalk@2.4.2, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
@@ -4589,6 +4703,11 @@ fstream@^1.0.0, fstream@^1.0.12:
     mkdirp ">=0.5 0"
     rimraf "2"
 
+ftdomdelegate@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/ftdomdelegate/-/ftdomdelegate-3.1.0.tgz#f22a1bb3dba7ed0e239125487923899a16448963"
+  integrity sha512-sEGlE4xTcwl7RxW8ypB2jUbKAWxG4iE7YLmko9AKdGUn2BY1fkg5zeC0Ec9Ac770iDpAqgzXdzO4KrPi3sasug==
+
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
@@ -5291,6 +5410,11 @@ inquirer@^6.4.1:
     string-width "^2.1.0"
     strip-ansi "^5.1.0"
     through "^2.3.6"
+
+insert-css@0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/insert-css/-/insert-css-0.0.0.tgz#2304bfa6f893abecb8ff9ca8d9c7605d94cf2911"
+  integrity sha1-IwS/pviTq+y4/5yo2cdgXZTPKRE=
 
 internal-ip@^4.2.0:
   version "4.3.0"
@@ -7099,6 +7223,18 @@ nopt@^4.0.1:
   dependencies:
     abbrev "1"
     osenv "^0.1.4"
+
+normalize-css@^2.0.0:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/normalize-css/-/normalize-css-2.3.1.tgz#fc03e3b91e3a51aa7a1836bae7b2b6ac6d51e156"
+  integrity sha1-/APjuR46Uap6GDa657K2rG1R4VY=
+  dependencies:
+    insert-css "0.0.0"
+
+normalize-legacy-addon@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/normalize-legacy-addon/-/normalize-legacy-addon-0.1.0.tgz#8ca131e8503943a3a9e4d0d70cc0e80a27a40c9e"
+  integrity sha1-jKEx6FA5Q6Op5NDXDMDoCiekDJ4=
 
 normalize-package-data@^2.3.2, normalize-package-data@^2.3.4:
   version "2.5.0"
