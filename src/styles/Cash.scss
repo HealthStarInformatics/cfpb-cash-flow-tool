@@ -1,0 +1,84 @@
+@import "colors.scss";
+
+.cash-section {
+  padding: 20px;
+}
+
+// CashList.jsx
+.cash-list {
+  margin-top: 20px;
+  &.empty {
+    margin-top: 5px;
+    .empty-state {
+      font-size: 1.2rem;
+      color: $grey80;
+      margin: 5px auto;
+    }
+  }
+
+  .entry {
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+    .name,
+    .amount {
+      margin: 2px 0;
+      font-weight: 500;
+    }
+  }
+}
+
+// CashEdit.jsx
+.cash-edit {
+  padding-bottom: 50px;
+
+  .type {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-actions {
+    display: flex;
+    flex-direction: column;
+    button {
+      cursor: pointer;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 1.2rem;
+      border-radius: 7px;
+      padding: 20px;
+      margin-top: 20px;
+
+      &.save {
+        background: $pacific;
+      }
+      &.delete {
+        background: $grey;
+      }
+    }
+  }
+}
+
+// CashHeader.jsx
+.cash-header,
+.cash-title {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  span {
+    line-height: 25px;
+  }
+  img {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.cash-title span {
+  padding-left: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}

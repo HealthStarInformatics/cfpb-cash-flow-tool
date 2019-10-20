@@ -1,13 +1,14 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import { DayModal } from "./components/DayModal";
+import { CalendarView } from "./components/CalendarView";
 import { LandingPage } from "./components/LandingPage";
 import { MonthSelection } from "./components/MonthSelection";
-import { CalendarView } from "./components/CalendarView";
 import { StrategyView } from "./components/StrategyView";
 import { TestNav } from "./components/TestNav";
 import "./styles/App.scss";
 
-const Context = React.createContext();
+export const AppContext = React.createContext();
 
 class App extends React.Component {
   state = {
@@ -15,24 +16,25 @@ class App extends React.Component {
     expenses: {}
   };
 
-  render = () => {
+  render() {
     const contextObject = {
       ...this.state,
       setState: this.setState.bind(this)
     };
 
     return (
-      <Context.Provider value={contextObject}>
+      <AppContext.Provider value={contextObject}>
         <TestNav />
         <Switch>
           <Route path="/" exact component={LandingPage} />
           <Route path="/month" component={MonthSelection} />
           <Route path="/calendar" component={CalendarView} />
           <Route path="/strategies" component={StrategyView} />
+          <Route path="/day" component={DayModal} />
         </Switch>
-      </Context.Provider>
+      </AppContext.Provider>
     );
-  };
+  }
 }
 
 export default App;
