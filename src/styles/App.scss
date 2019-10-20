@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -12,4 +14,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+select {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
 
+.cash-available {
+  font-size: 1.4rem;
+  font-weight: 500;
+  background: $grey10;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid;
+  &.green {
+    background-color: $green20;
+    border-color: $green;
+  }
+  &.red {
+    background-color: $purple20;
+    border-color: $purple;
+  }
+}

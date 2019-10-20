@@ -1,0 +1,10 @@
+@import "colors.scss";
+
+.divider {
+  &.light {
+    border-bottom: 1px solid $grey20;
+  }
+  &.dark {
+    border-bottom: 1px solid $grey60;
+  }
+}
