@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "capital-framework": "^11.0.1",
+    "cf-buttons": "^11.0.1",
+    "cf-core": "^11.0.0",
+    "cf-icons": "^11.0.1",
     "npm-sass": "^2.3.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",

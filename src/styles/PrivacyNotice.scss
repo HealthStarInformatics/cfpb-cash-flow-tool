@@ -1,0 +1,31 @@
+@import "colors.scss";
+
+.privacy-notice-wrapper {
+    padding:20px 20px 5px 20px;
+
+}
+
+.save-work-info {
+    border: 1px solid $gold;
+    background-color: $gold20;
+    padding: 20px;
+
+    div {
+        display:flex;
+    }
+
+    div:first-child {
+        margin-right: 5px;
+    }
+}
+
+.privacy-statement {
+    margin: 25px 0px 10px 0px;
+    padding-bottom: 30px;
+    border-bottom: 4px solid $green;
+
+    div:first-child {
+        font-size: 1.2rem;
+    }
+}
+

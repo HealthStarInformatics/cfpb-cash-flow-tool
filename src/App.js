@@ -5,7 +5,7 @@ import { CalendarView } from "./components/CalendarView";
 import { LandingPage } from "./components/LandingPage";
 import { MonthSelectView } from "./components/MonthSelectView";
 import { StrategyView } from "./components/StrategyView";
-import { TestNav } from "./components/TestNav";
+// import { TestNav } from "./components/TestNav";
 import "./styles/App.scss";
 
 export const AppContext = React.createContext();
@@ -24,8 +24,8 @@ class App extends React.Component {
     };
 
     return (
-      <AppContext.Provider value={contextObject}>
-        <TestNav />
+      <Context.Provider value={contextObject}>
+        {/* <TestNav /> */}
         <Switch>
           <Route path="/" exact component={LandingPage} />
           <Route path="/month" component={MonthSelectView} />
