@@ -19,7 +19,7 @@ export const DayModal = ({ closeModal, selectedDate = newDayString() }) => (
     <Cash section="expenses" date={selectedDate} />
     <CashAvailableToday date={selectedDate} />
     <div className="actions section">
-      <button className="done" onClick={closeModal}>
+      <button className="primary" onClick={closeModal}>
         Done
       </button>
     </div>

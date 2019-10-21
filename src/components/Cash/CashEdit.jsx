@@ -64,10 +64,10 @@ export const CashEdit = ({ current, section, setEditing, setState }) => {
 
       {type && (
         <div className="form-actions">
-          <button className="save" type="submit">
+          <button className="primary" type="submit">
             Save this {config.type}
           </button>
-          <button className="delete" onClick={deleteEntry}>
+          <button className="secondary" onClick={deleteEntry}>
             Delete this {config.type}
           </button>
         </div>
