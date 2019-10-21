@@ -14,11 +14,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-select {
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-
 .cash-available {
   font-size: 1.4rem;
   font-weight: 500;
@@ -33,5 +28,21 @@ select {
   &.red {
     background-color: $purple20;
     border-color: $purple;
+  }
+}
+
+button {
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  padding: 15px;
+
+  &.primary {
+    background: $pacific;
+  }
+  &.secondary {
+    background: $grey;
   }
 }
