@@ -4,7 +4,7 @@ import "../styles/CalendarView.scss";
 
 import CurrentMonthViewHeader from "./CurrentMonthViewHeader";
 import NotificationCenter from "./NotificationCenter";
-import Calendar from "./Calendar";
+import Calendar from "./Calendar/Calendar";
 import CurrentMonthSummary from "./CurrentMonthSummary";
 import CashAvailableMonth from "./CashAvailableMonth";
 

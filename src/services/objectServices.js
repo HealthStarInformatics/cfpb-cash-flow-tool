@@ -1,7 +1,7 @@
 /**
  * Returns only the incomes/expenses for the provided date
  * @param {Object} inputs Incomes/Expenses
- * @param {Date} date selected date
+ * @param {String} date ex. "Thursday, October 31, 2019"
  */
 export const filterByDate = (inputs, date) => {
   if (!date) return inputs;

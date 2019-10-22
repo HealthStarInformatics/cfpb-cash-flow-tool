@@ -1,0 +1,128 @@
+@import "colors.scss";
+
+.calendar {
+  text-align: center;
+  font-size: 1.2rem;
+
+  .row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+
+  .day {
+    cursor: pointer;
+    border: 1px solid $navy80;
+    padding: 20px 0;
+    margin: 2px;
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+
+    .number {
+      line-height: 1rem;
+      padding-bottom: 0;
+    }
+
+    .symbol svg {
+      width: 25px;
+      height: 25px;
+      margin-top: 7px;
+      fill: white;
+    }
+
+    .dots {
+      color: white;
+      font-size: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    &.placeholder {
+      border: 0;
+      cursor: default;
+    }
+
+    &.label {
+      border: 0;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+
+    &.hasCash {
+      background: $green20;
+      border-color: $green;
+
+      .symbol svg {
+        width: 25px;
+        height: 25px;
+        fill: $green;
+      }
+
+      .dots {
+        color: $green20;
+      }
+    }
+
+    &.noCash {
+      background: $purple20;
+      border-color: $purple;
+
+      .symbol svg {
+        width: 25px;
+        height: 25px;
+        fill: $purple;
+      }
+
+      .dots {
+        color: $purple20;
+      }
+    }
+
+    &.hasEntries {
+      .number {
+        font-weight: bold;
+      }
+      .dots {
+        color: black;
+      }
+    }
+  }
+}
+
+.calendar-key {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-end;
+  padding: 20px 0;
+  font-size: 1.2rem;
+
+  .item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 5px;
+
+    svg {
+      height: 25px;
+      width: 25px;
+    }
+
+    svg,
+    .dots {
+      padding-right: 10px;
+      font-size: 0.5rem;
+      letter-spacing: 1px;
+      line-height: 25px;
+    }
+
+    &.cash svg {
+      fill: $green;
+    }
+
+    &.nocash svg {
+      fill: $purple;
+    }
+  }
+}

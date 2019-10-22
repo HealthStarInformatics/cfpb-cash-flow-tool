@@ -1,13 +1,10 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
-
 import "../styles/CalendarView.scss";
-
 import CalendarHeader from "./CalendarHeader";
 import CalendarMonthView from "./CalendarMonthView";
-import SectionTip from "./SectionTip";
 import PrivacyNotice from "./PrivacyNotice";
+import SectionTip from "./SectionTip";
 import SiteFooter from "./SiteFooter";
 
 export const CalendarView = () => (
