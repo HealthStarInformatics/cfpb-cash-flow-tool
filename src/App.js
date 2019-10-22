@@ -1,20 +1,23 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { DayModal } from "./components/DayModal";
 import { CalendarView } from "./components/CalendarView";
+import { DayModal } from "./components/DayModal";
 import { LandingPage } from "./components/LandingPage";
 import { MonthSelectView } from "./components/MonthSelectView";
 import { StrategyView } from "./components/StrategyView";
-// import { TestNav } from "./components/TestNav";
+import { exampleMonthlyData } from "./mockData";
 import "./styles/App.scss";
 
 export const AppContext = React.createContext();
 
 class App extends React.Component {
   state = {
-    incomes: {},
-    expenses: {},
-    selectedMonth: null
+    incomes: {}, // TODO: Update DayModal to use monthlyData then delete this.
+    expenses: {}, // TODO: Update DayModal to use monthlyData then delete this.
+    selectedMonth: null,
+    selectedDay: null,
+    monthlyData: exampleMonthlyData // TODO: delete example data
+    // monthlyData: {}
   };
 
   render() {
@@ -25,7 +28,6 @@ class App extends React.Component {
 
     return (
       <AppContext.Provider value={contextObject}>
-        {/* <TestNav /> */}
         <Switch>
           <Route path="/" exact component={LandingPage} />
           <Route path="/month" component={MonthSelectView} />

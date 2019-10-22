@@ -5,7 +5,13 @@ import { CashEditName } from "./CashEditName";
 import { CashEditType } from "./CashEditType";
 import { LabeledCheckbox } from "../shared/LabeledCheckbox";
 
-export const CashEdit = ({ current, section, setEditing, setState }) => {
+export const CashEdit = ({
+  current,
+  section,
+  selectedMonth,
+  setEditing,
+  setState
+}) => {
   const [type, setType] = useState(current.type);
   const [name, setName] = useState(current.name || "");
   const [amount, setAmount] = useState(current.amount || "");
@@ -19,15 +25,21 @@ export const CashEdit = ({ current, section, setEditing, setState }) => {
       const thisId = current.id || Date.now();
       setEditing(false);
       return {
-        [section]: {
-          ...prevState[section],
-          [thisId]: {
-            id: thisId,
-            date: current.date,
-            type,
-            name,
-            amount,
-            recurring
+        monthlyData: {
+          ...prevState.monthlyData,
+          [selectedMonth.label]: {
+            ...prevState.monthlyData[selectedMonth.label],
+            [section]: {
+              ...prevState.monthlyData[selectedMonth.label][section],
+              [thisId]: {
+                id: thisId,
+                date: current.date,
+                type,
+                name,
+                amount,
+                recurring
+              }
+            }
           }
         }
       };
@@ -38,10 +50,16 @@ export const CashEdit = ({ current, section, setEditing, setState }) => {
     e.preventDefault();
     setState(prevState => {
       setEditing(false);
-      const newData = prevState[section];
+      const newData = prevState.monthlyData[selectedMonth.label][section];
       delete newData[current.id];
       return {
-        [section]: { ...newData }
+        monthlyData: {
+          ...prevState.monthlyData,
+          [selectedMonth.label]: {
+            ...prevState.monthlyData[selectedMonth.label],
+            [section]: { ...newData }
+          }
+        }
       };
     });
   };

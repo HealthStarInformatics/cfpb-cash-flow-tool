@@ -15,10 +15,14 @@ import { CashList } from "./CashList";
 export const Cash = ({ section = "incomes", date }) => {
   const [editing, setEditing] = useState(false);
   const [selected, setSelected] = useState({});
-  const { incomes, expenses, setState } = useContext(AppContext);
+  const { monthlyData, selectedMonth, setState } = useContext(AppContext);
+
+  let currentMonthData;
+  if (!selectedMonth) return null;
+  currentMonthData = monthlyData[selectedMonth.label];
 
   const config = cashConfig[section];
-  const data = section === "incomes" ? incomes : expenses;
+  const data = currentMonthData[section];
 
   return (
     <div className="cash-section">
@@ -46,6 +50,7 @@ export const Cash = ({ section = "incomes", date }) => {
           setState={setState}
           setEditing={setEditing}
           section={section}
+          selectedMonth={selectedMonth}
         />
       )}
     </div>

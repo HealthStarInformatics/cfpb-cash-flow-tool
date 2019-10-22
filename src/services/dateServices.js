@@ -1,3 +1,5 @@
+import { getMonthNumber } from "./calendarServices";
+
 /**
  * Returns a string for the day
  * @param {Date} date
@@ -12,12 +14,22 @@ export const dayString = date =>
 /**
  * @returns {String} ex. 'Thursday, October 31, 2019'
  */
-export const newDayString = () =>
-  new Date().toLocaleString("en-US", { dateStyle: "full" });
+export const newDayString = (date = null) => {
+  const result = (date || new Date()).toLocaleString("en-US", {
+    dateStyle: "full"
+  });
 
-/**
- * Month Names
- */
+  return result;
+};
+
+export const deriveDateString = (day, monthYear) => {
+  let [month, year] = monthYear.split(" ");
+  let monthNumber = getMonthNumber(month);
+  year = Number.parseInt(year);
+
+  return newDayString(new Date(year, monthNumber, day));
+};
+
 export const MONTH_NAMES = [
   "January",
   "February",
