@@ -6,26 +6,20 @@
 }
 
 .tools-title {
-    text-transform:uppercase;
-    font-size: .7rem;
-}
-
-.page-title {
-    font-size: 1.5rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
 }
 
 .lphero-img {
-    text-align:center;
-    padding-bottom: 20px;
+  text-align: center;
+  padding-bottom: 20px;
 
-    img {
-        height: 200px;
-    }
+  img {
+    height: 200px;
+  }
 }
 
 .get-started-btn {
-    background-color: $pacific;
-    padding: 13px 0px;
+  background-color: $pacific;
+  padding: 13px 0px;
 }
-
-
