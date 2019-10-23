@@ -6,12 +6,10 @@
 
 // colors are taken from "https://cfpb.github.io/design-manual/brand-guidelines/color-principles.html"
 
-
-
 body {
   margin: 0;
   font-size: 16px;
-  font-family: 'Avenir Next', Arial, sans-serif;
+  font-family: "Avenir Next", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -47,11 +45,14 @@ button {
   &.secondary {
     background: $grey;
   }
+  &.with-margin {
+    margin: 25px;
+  }
 }
 
 ul {
-  list-style:none;
-  padding-left:0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .Nav_link:link {
@@ -66,8 +67,12 @@ ul {
   color: $pacific;
 }
 
+.page-title {
+  font-size: 1.3rem;
+  font-weight: 550;
+}
 
-
-
-
-
+.page-subtitle {
+  font-size: 1.1rem;
+  font-weight: 550;
+}

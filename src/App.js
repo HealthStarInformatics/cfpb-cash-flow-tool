@@ -24,7 +24,7 @@ class App extends React.Component {
     };
 
     return (
-      <Context.Provider value={contextObject}>
+      <AppContext.Provider value={contextObject}>
         {/* <TestNav /> */}
         <Switch>
           <Route path="/" exact component={LandingPage} />
