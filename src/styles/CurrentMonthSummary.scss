@@ -1,0 +1,96 @@
+@import "colors.scss";
+
+//CurrentMonthSummary
+.current-month-summary-wrapper {
+  padding: 25px 0px;
+  margin-top: 25px;
+  border-top: 1px solid $grey80;
+
+  .plus-minus {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .underline {
+    color: $pacific;
+    text-decoration: underline;
+  }
+
+  .plus-minus-icon {
+    width: 25px;
+    height: 25px;
+    fill: #1579d0;
+  }
+}
+
+.monthly-totals-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .show-link {
+    display: flex;
+
+    div {
+      padding: 0px 5px;
+    }
+  }
+}
+
+//CurrentMonthSummaryChart
+.current-month-summary-chart {
+  li {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    padding-top: 5px;
+  }
+
+  .title {
+    text-align: left;
+    width: 30%;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .bar-chart {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 70%;
+  }
+
+  .total-value {
+    width: 20%;
+    text-align: right;
+  }
+}
+
+.dollar-sign-icon {
+  height: 20px;
+  width: 20px;
+  fill: #43484e;
+}
+
+.bc-1 {
+  background-color: $navy20;
+  height: 20px;
+  width: 60%;
+}
+
+.bc-2 {
+  background-color: $navy20;
+  height: 20px;
+  width: 65%;
+}
+
+.bc-3 {
+  background-color: $navy40;
+  height: 20px;
+  width: 10%;
+}
+
+.total-value {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,13 @@
+@import "colors.scss";
+
+.notification-center-wrapper {
+  border: 0.5px solid $navy20;
+  background-color: $navy10;
+  margin-top: 20px;
+  padding: 8px;
+
+  .text {
+    border: 1px solid $navy10;
+    line-height: 1.5rem;
+  }
+}

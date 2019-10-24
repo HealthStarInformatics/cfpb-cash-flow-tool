@@ -1,28 +1,36 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { ReactComponent as PlusSign } from "../assets/plus-sign-icon.svg";
+import React, { useState } from "react";
+
+import "../styles/CurrentMonthSummary.scss";
 
 import CurrentMonthSummaryChart from "./CurrentMonthSummaryChart";
+import ActionLink from "./ActionLink";
 
-const CurrentMonthSummary = () => (
-  <div className="monthly-totals-wrapper">
-    <div className="monthly-totals-header">
-      <div className="page-subtitle">Monthly Totals</div>
-      <div className="show-link">
-        <Link to="/currentmonthsummarychart" className="Nav_link">
-          Show
-        </Link>
-        <div>
-          <PlusSign className="plus-sign-icon" />
+function CurrentMonthSummary() {
+  const [chartvisible, setChartVisible] = useState(false);
+
+  const changeChart = () => {
+    setChartVisible(!chartvisible);
+  };
+
+  return (
+    <div className="current-month-summary-wrapper">
+      <div className="monthly-totals-header">
+        <div className="page-subtitle">Monthly Totals</div>
+        <div className="show-link" onClick={changeChart}>
+          {chartvisible ? (
+            <ActionLink text="Hide" icon="close-icon" />
+          ) : (
+            <ActionLink text="Show" icon="open-icon" />
+          )}
         </div>
       </div>
+      <p className="description">
+        Review your total income, expenses and the amount you set aside for
+        savings.
+      </p>
+      {chartvisible ? <CurrentMonthSummaryChart /> : null}
     </div>
-    <p className="description">
-      Review your total income, expenses and the amount you set aside for
-      savings.
-    </p>
-    <CurrentMonthSummaryChart />
-  </div>
-);
+  );
+}
 
 export default CurrentMonthSummary;

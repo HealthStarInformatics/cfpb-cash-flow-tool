@@ -1,15 +1,14 @@
 import React from "react";
-import { ReactComponent as LightBulb } from "../assets/light-bulb.svg";
+
+import Icon from "./Icon";
 
 import "../styles/CalendarView.scss";
 
-const SectionTip = () => (
+const SectionTip = ({ text }) => (
   <div className="section-tip-wrapper">
-    <div>
-      <LightBulb className="light-bulb" />
-      Tip: You can access strategies for improving cash flow at any time. But
-      the more information you add to the calendar, the more personalized your
-      strategies will become.
+    <Icon type="light-bulb" />
+    <div className="text">
+      <strong>Tip:</strong> {text}
     </div>
   </div>
 );

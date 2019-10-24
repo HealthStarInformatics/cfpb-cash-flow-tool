@@ -49,61 +49,6 @@
   }
 }
 
-//CurrentMonthViewHeader
-.starting-balance-input {
-  border: 1px solid $grey80;
-  padding: 7px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  .starting-balance {
-    display: flex;
-    flex-direction: row;
-
-    .dollar-sign-icon-wrapper {
-      display: flex;
-
-      .dollar-sign-icon {
-        width: 19px;
-        height: 19px;
-        fill: $grey80;
-      }
-    }
-  }
-
-  .pencil-edit-icon {
-    width: 20px;
-    height: 20px;
-    fill: $pacific;
-  }
-
-  div {
-    align-self: center;
-  }
-
-  .edit-btn {
-    display: flex;
-
-    div {
-      padding: 3px;
-    }
-  }
-}
-
-// NotificationCenter
-.notification-center-wrapper {
-  padding: 20px 0px;
-  display: flex;
-  flex-direction: row;
-
-  .star-icon {
-    width: 25px;
-    height: 25px;
-    fill: #ff9e1b;
-  }
-}
-
 //Calendar
 .calendar-wrapper {
   display: flex;
@@ -123,96 +68,18 @@
 
 //MonthSelectView
 
-//CurrentMonthSummary
-.monthly-totals-wrapper {
-  padding: 25px 0px;
-  margin-top: 25px;
-  border-top: 1px solid $grey80;
-
-  .plus-sign-icon {
-    width: 25px;
-    height: 25px;
-    fill: #1579d0;
-  }
-}
-
-.monthly-totals-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  .show-link {
-    display: flex;
-
-    div {
-      padding: 0px 5px;
-    }
-  }
-}
-
-//CurrentMonthSummaryChart
-.current-month-summary-chart-wrapper {
-  background-color: #ffe1b9;
-
-  li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .title {
-    text-align: left;
-    width: 30%;
-    border: 1px solid;
-  }
-
-  .bar-chart {
-    text-align: left;
-    width: 50%;
-    border: 1px solid;
-  }
-}
-
-.dollar-sign-icon {
-  height: 20px;
-  width: 20px;
-  fill: #43484e;
-}
-
-.bar-chart-1 {
-  background-color: $grey20;
-  height: 20px;
-  width: 60px;
-}
-
-.bar-chart-2 {
-  background-color: $grey20;
-  height: 20px;
-  width: 70px;
-}
-
-.bar-chart-3 {
-  background-color: $grey20;
-  height: 20px;
-  width: 25px;
-}
-
-.total-value {
-  display: flex;
-  flex-direction: row;
-}
-
 //SectionTip
 .section-tip-wrapper {
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
 
-  .light-bulb {
-    width: 25px;
-    height: 25px;
-    fill: #1579d0;
-    margin: 10px 6px 0px 0px;
+  .text {
+    line-height: 1.6rem;
+
+    p {
+      font-weight: 450;
+    }
   }
 }
 

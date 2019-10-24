@@ -1,12 +1,7 @@
 import React from "react";
 import { NavLink as Link } from "react-router-dom";
-import { ReactComponent as FacebookIcon } from "../assets/facebook-square.svg";
-import { ReactComponent as TwitterIcon } from "../assets/twitter-square.svg";
-import { ReactComponent as LinkedInIcon } from "../assets/linkedin-square.svg";
-import { ReactComponent as FlickrIcon } from "../assets/flickr-square.svg";
-import { ReactComponent as YouTubeIcon } from "../assets/youtube-square.svg";
-import { ReactComponent as ExternalLinkIcon } from "../assets/external-link.svg";
-import { ReactComponent as UpArrowIcon } from "../assets/up-arrow.svg";
+
+import Icon from "./Icon";
 
 import usflag from "../assets/us-flag.png";
 
@@ -23,7 +18,7 @@ const SiteFooter = () => (
         <div>
           <div>Back to top</div>
           <div>
-            <UpArrowIcon className="up-arrow-icon" />
+            <Icon type="up-arrow-icon" />
           </div>
         </div>
       </button>
@@ -37,19 +32,19 @@ const SiteFooter = () => (
     </ul>
     <ul className="social-media-ul">
       <li>
-        <FacebookIcon className="social-media-icon" />
+        <Icon type="facebook-icon" />
       </li>
       <li>
-        <TwitterIcon className="social-media-icon" />
+        <Icon type="twitter-icon" />
       </li>
       <li>
-        <LinkedInIcon className="social-media-icon" />
+        <Icon type="linkedin-icon" />
       </li>
       <li>
-        <YouTubeIcon className="social-media-icon" />
+        <Icon type="youtube-icon" />
       </li>
       <li>
-        <FlickrIcon className="social-media-icon" />
+        <Icon type="flickr-icon" />
       </li>
     </ul>
     <ul className="bottom-ul">
@@ -63,14 +58,14 @@ const SiteFooter = () => (
         <div>USA.gov</div>
         <Link to="#" className="Nav_link">
           <div>
-            <ExternalLinkIcon className="external-link-icon" />
+            <Icon type="external-link-icon" />
           </div>
         </Link>
       </li>
       <li className="ext-link">
         <div>Office of Inspector General</div>
         <Link to="#">
-          <ExternalLinkIcon className="external-link-icon" />
+          <Icon type="external-link-icon" />
         </Link>
       </li>
     </ul>

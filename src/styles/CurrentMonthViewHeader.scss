@@ -1,0 +1,61 @@
+@import "colors.scss";
+
+//CurrentMonthViewHeader
+
+.current-month-view-header-wrapper {
+  .subtitle {
+    margin-bottom: 5px;
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .description {
+    margin-bottom: 13px;
+  }
+}
+.starting-balance-input {
+  border: 1px solid $grey80;
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .starting-balance {
+    display: flex;
+    flex-direction: row;
+
+    .dollar-sign-icon-wrapper {
+      display: flex;
+    }
+  }
+
+  div {
+    align-self: center;
+  }
+
+  .edit-btn {
+    display: flex;
+
+    div {
+      padding: 3px;
+    }
+  }
+}
+
+// StartinBalanceModal
+
+.starting-balance-modal-wrapper {
+  border-top: 2px solid $navy60;
+  border-bottom: 2px solid $navy60;
+  padding: 10px;
+
+  .modal-desc {
+    padding: 8px;
+  }
+
+  .underline {
+    text-decoration: underline;
+    color: $pacific;
+  }
+}
