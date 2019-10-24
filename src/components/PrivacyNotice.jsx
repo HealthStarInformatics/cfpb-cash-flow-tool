@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink as Link } from "react-router-dom";
-import { ReactComponent as ExclamationPointIcon } from "../assets/exclamation-point.svg";
+
+import Icon from "./Icon";
 
 import "../styles/PrivacyNotice.scss";
 
@@ -9,7 +10,7 @@ const PrivacyNotice = () => (
     <div className="save-work-info">
       <div>
         <div>
-          <ExclamationPointIcon className="exclamation-point" />
+          <Icon type="exclamation-point" />
         </div>
         <div>How to save your work</div>
       </div>
