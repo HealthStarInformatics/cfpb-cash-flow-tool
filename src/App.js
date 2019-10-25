@@ -4,7 +4,7 @@ import { CalendarView } from "./components/CalendarView";
 import { DayModal } from "./components/DayModal";
 import { LandingPage } from "./components/LandingPage";
 import { MonthSelectView } from "./components/MonthSelectView";
-import { StrategyView } from "./components/StrategyView";
+import { StrategyView } from "./components/StrategyView/StrategyView";
 import { exampleMonthlyData } from "./mockData";
 import "./styles/App.scss";
 
