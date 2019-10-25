@@ -12,12 +12,9 @@ export const AppContext = React.createContext();
 
 class App extends React.Component {
   state = {
-    incomes: {}, // TODO: Update DayModal to use monthlyData then delete this.
-    expenses: {}, // TODO: Update DayModal to use monthlyData then delete this.
     selectedMonth: null,
     selectedDay: null,
     monthlyData: exampleMonthlyData // TODO: delete example data
-    // monthlyData: {}
   };
 
   render() {

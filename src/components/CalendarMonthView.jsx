@@ -1,22 +1,16 @@
-import React, { useContext } from "react";
-
-import { AppContext } from "../App";
-
+import React from "react";
 import "../styles/CalendarView.scss";
-
+import Calendar from "./Calendar/Calendar";
+import CashAvailableMonth from "./CashAvailableMonth";
+import CurrentMonthSummary from "./CurrentMonthSummary";
 import CurrentMonthViewHeader from "./CurrentMonthViewHeader";
 import NotificationCenter from "./NotificationCenter";
-import Calendar from "./Calendar/Calendar";
-import CurrentMonthSummary from "./CurrentMonthSummary";
-import CashAvailableMonth from "./CashAvailableMonth";
 
-export const CalendarMonthView = () => {
-  const { selectedMonth } = useContext(AppContext);
-
+export const CalendarMonthView = ({ title }) => {
   return (
     <div className="calendar-month-view-wrapper">
       <div className="header-banner">
-        <div className="page-title">{selectedMonth.label}</div>
+        <div className="page-title">{title}</div>
       </div>
       <div className="body">
         <CurrentMonthViewHeader />

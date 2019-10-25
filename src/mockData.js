@@ -14,7 +14,8 @@ export const exampleMonthlyData = {
         name: "Acme Inc. paycheck",
         amount: 185000,
         recurring: true,
-        date: "Saturday, October 5, 2019"
+        date: 1570255200000
+        // date: "Saturday, October 5, 2019"
       },
       "2": {
         id: "2",
@@ -22,7 +23,8 @@ export const exampleMonthlyData = {
         name: "Acme Inc. paycheck",
         amount: 185000,
         recurring: true,
-        date: "Thursday, October 24, 2019"
+        date: 1571896800000
+        //  date: "Thursday, October 24, 2019"
       }
     },
     expenses: {
@@ -30,9 +32,10 @@ export const exampleMonthlyData = {
         id: "2",
         type: { value: "rent", label: "Rent or mortgage" },
         name: "Apt. Rent",
-        amount: 170050,
+        amount: 170000,
         recurring: true,
-        date: "Tuesday, October 15, 2019"
+        date: 1571119200000
+        //  date: "Tuesday, October 15, 2019"
       },
       "3": {
         id: "3",
@@ -40,7 +43,8 @@ export const exampleMonthlyData = {
         name: "for car",
         amount: 20000,
         recurring: true,
-        date: "Tuesday, October 15, 2019"
+        date: 1571119200000
+        //  date: "Tuesday, October 15, 2019"
       },
       "4": {
         id: "4",
@@ -48,7 +52,8 @@ export const exampleMonthlyData = {
         name: "Holiday Gifts",
         amount: 25,
         recurring: true,
-        date: "Tuesday, October 15, 2019"
+        date: 1571119200000
+        //  date: "Tuesday, October 15, 2019"
       }
     }
   },
@@ -57,7 +62,7 @@ export const exampleMonthlyData = {
       checking: 0,
       prepaid: 0,
       other: 0,
-      total: -50,
+      total: -500,
       startDay: null
     },
     incomes: {
@@ -65,9 +70,10 @@ export const exampleMonthlyData = {
         id: "1",
         type: { value: "retirement", label: "Retirement" },
         name: "Acme Inc. paycheck",
-        amount: 110050,
+        amount: 110000,
         recurring: true,
-        date: "Friday, November 15, 2019"
+        date: 1573801200000
+        //  date: "Friday, November 15, 2019"
       }
     },
     expenses: {
@@ -75,9 +81,10 @@ export const exampleMonthlyData = {
         id: "2",
         type: { value: "rent", label: "Rent or mortgage" },
         name: "Apt. Rent",
-        amount: 100050,
+        amount: 100000,
         recurring: true,
-        date: "Tuesday, November 5, 2019"
+        date: 1572937200000
+        //  date: "Tuesday, November 5, 2019"
       }
     }
   }

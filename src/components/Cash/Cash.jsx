@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../App";
 import { cashConfig } from "../../config/cashConfig";
-import { filterByDate } from "../../services/objectServices";
+// import { filterByDate } from "../../services/objectServices";
 import "../../styles/Cash.scss";
 import { CashEdit } from "./CashEdit";
 import { CashHeader } from "./CashHeader";
@@ -12,17 +12,14 @@ import { CashList } from "./CashList";
  * @param {String} section incomes/expenses
  * @param {Date} date selected date
  */
-export const Cash = ({ section = "incomes", date }) => {
+export const Cash = ({ section = "incomes", date, data, setState }) => {
   const [editing, setEditing] = useState(false);
   const [selected, setSelected] = useState({});
-  const { monthlyData, selectedMonth, setState } = useContext(AppContext);
+  const { selectedMonth } = useContext(AppContext);
 
-  let currentMonthData;
   if (!selectedMonth) return null;
-  currentMonthData = monthlyData[selectedMonth.label];
 
   const config = cashConfig[section];
-  const data = currentMonthData[section];
 
   return (
     <div className="cash-section">
@@ -35,7 +32,7 @@ export const Cash = ({ section = "incomes", date }) => {
 
       {!editing && (
         <CashList
-          data={filterByDate(data, date)}
+          data={data}
           setEditing={setEditing}
           setSelected={setSelected}
           addButtonText={config.addButtonText}
@@ -48,6 +45,7 @@ export const Cash = ({ section = "incomes", date }) => {
         <CashEdit
           current={selected}
           setState={setState}
+          data={data}
           setEditing={setEditing}
           section={section}
           selectedMonth={selectedMonth}

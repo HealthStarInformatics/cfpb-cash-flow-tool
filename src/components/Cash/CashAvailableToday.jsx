@@ -1,41 +1,21 @@
-import React, { useContext } from "react";
-import { AppContext } from "../../App";
+import React from "react";
 import { formatCurrency, totalAmount } from "../../services/currencyServices";
 import { joinClasses } from "../../services/stringServices";
-import { filterByDate } from "../../services/objectServices";
+import { isEmpty } from "lodash";
 
-export const CashAvailableToday = ({ date, startingBalance = 0 }) => {
-  const { monthlyData, selectedMonth, selectedDayBalance } = useContext(
-    AppContext
-  );
-
-  if (!selectedMonth) return null;
-
-  const filteredIncomes = filterByDate(
-    monthlyData[selectedMonth.label].incomes,
-    date
-  );
-
-  const filteredExpenses = filterByDate(
-    monthlyData[selectedMonth.label].expenses,
-    date
-  );
-
+export const CashAvailableToday = ({
+  incomes,
+  expenses,
+  startBalance,
+  isStyled
+}) => {
   const cashAvailable =
-    startingBalance +
-    totalAmount(filteredIncomes) -
-    totalAmount(filteredExpenses);
+    (startBalance || 0) + totalAmount(incomes) - totalAmount(expenses);
 
-  const hasEntries =
-    Object.keys(filteredIncomes).length > 0 ||
-    Object.keys(filteredExpenses).length > 0;
+  const hasEntries = !isEmpty(incomes) || !isEmpty(expenses);
 
   const classname =
-    selectedDayBalance || hasEntries
-      ? cashAvailable > 0
-        ? "green"
-        : "red"
-      : "";
+    isStyled || hasEntries ? (cashAvailable > 0 ? "green" : "red") : "";
 
   return (
     <div className={joinClasses(["section", "cash-available", classname])}>
