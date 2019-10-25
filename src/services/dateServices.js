@@ -1,35 +1,5 @@
 import { getMonthNumber } from "./calendarServices";
 
-/**
- * Returns a string for the day
- * @param {Date} date
- * @returns {String} ex. 'Thursday, October 31'
- */
-export const dayString = date =>
-  date
-    .split(",")
-    .slice(0, 2)
-    .join(",");
-
-/**
- * @returns {String} ex. 'Thursday, October 31, 2019'
- */
-export const newDayString = (date = null) => {
-  const result = (date || new Date()).toLocaleString("en-US", {
-    dateStyle: "full"
-  });
-
-  return result;
-};
-
-export const deriveDateString = (day, monthYear) => {
-  let [month, year] = monthYear.split(" ");
-  let monthNumber = getMonthNumber(month);
-  year = Number.parseInt(year);
-
-  return newDayString(new Date(year, monthNumber, day));
-};
-
 export const MONTH_NAMES = [
   "January",
   "February",
@@ -44,6 +14,47 @@ export const MONTH_NAMES = [
   "November",
   "December"
 ];
+
+export const DAY_NAMES = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
+
+export const MAX_DAYS_IN_MONTH = 31;
+
+/**
+ * Returns a string for the day
+ * @param {Number} timestamp
+ * @returns {String} ex. 'Thursday, October 31'
+ */
+export const dayString = timestamp => {
+  let date = new Date(timestamp);
+  let day = DAY_NAMES[date.getDay()];
+  let month = MONTH_NAMES[date.getMonth()];
+  let dayNumber = date.getDate();
+
+  return `${day}, ${month} ${dayNumber}`;
+};
+
+/**
+ * Returns the number of milliseconds since the epoch
+ * @param {Number} dayOfMonth 31
+ * @param {String} monthYear "October 2019"
+ */
+export const convertToTimestamp = (dayOfMonth, monthYear) => {
+  let [month, year] = monthYear.split(" ");
+  month = getMonthNumber(month);
+  year = Number.parseInt(year);
+
+  let date = new Date(year, month, dayOfMonth);
+
+  return date.getTime();
+};
 
 /**
  * Generates select options for MonthSelect dropdown menu

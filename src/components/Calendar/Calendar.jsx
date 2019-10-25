@@ -1,39 +1,32 @@
 import { isEmpty } from "lodash";
 import React, { useContext } from "react";
-import { Redirect } from "react-router-dom";
 import { AppContext } from "../../App";
 import { range } from "../../services/arrayServices";
-import {
-  createWeekRows,
-  getMonthInfo,
-  initializeMonthlyData
-} from "../../services/calendarServices";
+import { createWeekRows, getMonthInfo } from "../../services/calendarServices";
 import { totalAmount } from "../../services/currencyServices";
-import { deriveDateString } from "../../services/dateServices";
+import {
+  convertToTimestamp,
+  MAX_DAYS_IN_MONTH
+} from "../../services/dateServices";
 import { filterByDate } from "../../services/objectServices";
 import "../../styles/Calendar.scss";
+import { DayModal } from "../DayModal";
 import { CalendarBody } from "./CalendarBody";
 import { CalendarDay, CalendarDayPlaceholder } from "./CalendarDay";
 import { CalendarHeader } from "./CalendarHeader";
 import { CalendarKey } from "./CalendarKey";
-import { DayModal } from "../DayModal";
 
 /**
  * Calendar - Pulls data from AppContext and displays a calendar for the selectedMonth
  */
 export const Calendar = () => {
-  const { monthlyData, selectedDay, selectedMonth, setState } = useContext(
-    AppContext
-  );
-
-  // Can't show data unless user has selected a month
-  if (!selectedMonth) return <Redirect to="/month" />;
-
-  // Create an entry in App's state.monthlyData if none exists for this month
-  if (!monthlyData[selectedMonth.label]) {
-    initializeMonthlyData(selectedMonth.label, setState);
-    return null;
-  }
+  const {
+    monthlyData,
+    selectedDay,
+    selectedMonth,
+    setState,
+    selectedDayStartBalance
+  } = useContext(AppContext);
 
   // Get info needed to draw the calendar
   const { firstWeekday, daysInMonth } = getMonthInfo(selectedMonth.label);
@@ -48,41 +41,52 @@ export const Calendar = () => {
     selectedMonth.label
   ];
 
-  let todaysDate, todaysIncomes, todaysExpenses, todayHasEntries, todayIsStyled;
-
-  let currentBalance = startingBalance.total;
+  let todaysTimestamp,
+    todaysIncomes,
+    todaysExpenses,
+    todayHasEntries,
+    todayIsStyled,
+    currentBalance = 0,
+    prevBalance = 0,
+    firstDayWithEntries = MAX_DAYS_IN_MONTH + 1;
 
   // Create an entry for each day of month
   range(1, daysInMonth + 1).forEach(dayNumber => {
-    todaysDate = deriveDateString(dayNumber, selectedMonth.label);
-    todaysIncomes = filterByDate(incomes, todaysDate);
-    todaysExpenses = filterByDate(expenses, todaysDate);
+    todaysTimestamp = convertToTimestamp(dayNumber, selectedMonth.label);
+    todaysIncomes = filterByDate(incomes, todaysTimestamp);
+    todaysExpenses = filterByDate(expenses, todaysTimestamp);
     todayHasEntries = !isEmpty(todaysIncomes) || !isEmpty(todaysExpenses);
 
-    // In the event that a starting balance is not provided, start styling from the first day that has incomes/expenses
-    if (!startingBalance.startDay && todayHasEntries) {
-      startingBalance.startDay = dayNumber;
+    // Start styling, at the latest, from the first day with entries
+    if (todayHasEntries && firstDayWithEntries > MAX_DAYS_IN_MONTH) {
+      firstDayWithEntries = dayNumber;
+      todayIsStyled = true;
     }
 
-    // If the start day is later than the current day, but today has entries, start styling from today
-    if (startingBalance.startDay > dayNumber && todayHasEntries) {
-      startingBalance.startDay = dayNumber;
+    // Only include the month's starting balance in calculations that fall on or after the start day
+    if (startingBalance.startDay && startingBalance.startDay === dayNumber) {
+      todayIsStyled = true;
+      prevBalance = currentBalance + startingBalance.total;
+      currentBalance +=
+        startingBalance.total +
+        totalAmount(todaysIncomes) -
+        totalAmount(todaysExpenses);
+    } else {
+      prevBalance = todayIsStyled ? currentBalance : null;
+      currentBalance +=
+        totalAmount(todaysIncomes) - totalAmount(todaysExpenses);
     }
-
-    todayIsStyled =
-      startingBalance.startDay && dayNumber >= startingBalance.startDay;
-
-    currentBalance += totalAmount(todaysIncomes) - totalAmount(todaysExpenses);
 
     days.push(
       <CalendarDay
         key={dayNumber}
         number={dayNumber}
-        date={todaysDate}
+        date={todaysTimestamp}
         setState={setState}
         hasCash={currentBalance > 0}
         hasEntries={todayHasEntries}
         showCashStyling={todayIsStyled}
+        startingBalanceDay={prevBalance}
       />
     );
   });
@@ -92,7 +96,10 @@ export const Calendar = () => {
       {selectedDay && (
         <DayModal
           selectedDate={selectedDay}
-          closeModal={() => setState({ selectedDay: null })}
+          startingDayStartingBalance={selectedDayStartBalance}
+          closeModal={() =>
+            setState({ selectedDay: null, selectedDayStartBalance: null })
+          }
         />
       )}
       <div className="calendar">

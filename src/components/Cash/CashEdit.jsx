@@ -8,9 +8,10 @@ import { LabeledCheckbox } from "../shared/LabeledCheckbox";
 export const CashEdit = ({
   current,
   section,
-  selectedMonth,
+  // selectedMonth,
   setEditing,
-  setState
+  setState,
+  data
 }) => {
   const [type, setType] = useState(current.type);
   const [name, setName] = useState(current.name || "");
@@ -21,47 +22,27 @@ export const CashEdit = ({
 
   const saveEntry = e => {
     e.preventDefault();
-    setState(prevState => {
-      const thisId = current.id || Date.now();
-      setEditing(false);
-      return {
-        monthlyData: {
-          ...prevState.monthlyData,
-          [selectedMonth.label]: {
-            ...prevState.monthlyData[selectedMonth.label],
-            [section]: {
-              ...prevState.monthlyData[selectedMonth.label][section],
-              [thisId]: {
-                id: thisId,
-                date: current.date,
-                type,
-                name,
-                amount,
-                recurring
-              }
-            }
-          }
-        }
-      };
-    });
+    const thisId = current.id || Date.now();
+
+    setEditing(false);
+    setState([
+      ...data.filter(item => item.id !== thisId),
+      {
+        id: thisId,
+        date: current.date,
+        type,
+        name,
+        amount,
+        recurring
+      }
+    ]);
   };
 
   const deleteEntry = e => {
     e.preventDefault();
-    setState(prevState => {
-      setEditing(false);
-      const newData = prevState.monthlyData[selectedMonth.label][section];
-      delete newData[current.id];
-      return {
-        monthlyData: {
-          ...prevState.monthlyData,
-          [selectedMonth.label]: {
-            ...prevState.monthlyData[selectedMonth.label],
-            [section]: { ...newData }
-          }
-        }
-      };
-    });
+    data = data.filter(entry => entry.id !== current.id);
+    setEditing(false);
+    setState([...data]);
   };
 
   return (

@@ -1,18 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, Redirect } from "react-router-dom";
+import { AppContext } from "../App";
 import "../styles/CalendarView.scss";
-
 import CalendarHeader from "./CalendarHeader";
 import CalendarMonthView from "./CalendarMonthView";
 import PrivacyNotice from "./PrivacyNotice";
 import SectionTip from "./SectionTip";
 import SiteFooter from "./SiteFooter";
+import { initializeMonthlyData } from "../services/calendarServices";
 
 export const CalendarView = () => {
+  const { selectedMonth, monthlyData, setState } = useContext(AppContext);
+
+  // Can't show data unless user has selected a month
+  if (!selectedMonth) return <Redirect to="/month" />;
+
+  // Create an entry in App's state.monthlyData if none exists for this month
+  if (!monthlyData[selectedMonth.label]) {
+    initializeMonthlyData(selectedMonth.label, setState);
+    return null;
+  }
+
   return (
     <section id="calendar-view">
       <CalendarHeader />
-      <CalendarMonthView />
+      <CalendarMonthView title={selectedMonth.label} />
       <div className="review-btn">
         <Link to="/strategies" className="Nav_link">
           <button className="lp-btn primary">

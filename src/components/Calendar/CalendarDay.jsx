@@ -6,7 +6,7 @@ import { ReactComponent as MinusIcon } from "../../assets/minus-icon.svg";
 /**
  * CalendarDay
  * @param {Number} number Day in the month
- * @param {String} date i.e. 'Friday, October 4, 2019'
+ * @param {Number} date Timestamp (ms since epoch)
  * @param {Function} setState Update function for global state
  * @param {Boolean} hasEntries Flag to display dots
  * @param {Boolean} hasCash Flag to display red/green stylings
@@ -18,7 +18,8 @@ export const CalendarDay = ({
   setState,
   hasEntries,
   hasCash,
-  showCashStyling
+  showCashStyling,
+  startingBalanceDay
 }) => {
   // Dynamically determine styling for the day
   const classHasEntries = hasEntries ? "hasEntries" : "noEntries";
@@ -32,13 +33,23 @@ export const CalendarDay = ({
 
   const Icon = hasCash ? DollarIcon : MinusIcon;
 
+  const handleClick = () => {
+    setState({
+      selectedDay: date,
+      selectedDayStartBalance: startingBalanceDay,
+      selectedDayIsStyled: showCashStyling
+    });
+  };
+
   return (
-    <div className={classes} onClick={() => setState({ selectedDay: date })}>
+    <div className={classes} onClick={handleClick}>
       <div className="number">{number}</div>
-      <div className="dots">•••••</div>
-      <div className="symbol">
-        <Icon />
-      </div>
+      {showCashStyling && <div className="dots">•••••</div>}
+      {showCashStyling && (
+        <div className="symbol">
+          <Icon />
+        </div>
+      )}
     </div>
   );
 };
