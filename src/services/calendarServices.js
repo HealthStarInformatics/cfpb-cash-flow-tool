@@ -73,14 +73,14 @@ export const defaultMonthlyDataEntry = {
 
 /**
  * Creates a new entry in state.monthlyData
- * @param {String} month ex. "October 2019"
+ * @param {String} monthYear ex. "October 2019"
  * @param {Function} setState
  */
-export const initializeMonthlyData = (month, setState) => {
+export const initializeMonthlyData = (monthYear, setState) => {
   setState(prev => ({
     monthlyData: {
       ...prev.monthlyData,
-      [month]: { ...defaultMonthlyDataEntry }
+      [monthYear]: { ...defaultMonthlyDataEntry }
     }
   }));
 };
