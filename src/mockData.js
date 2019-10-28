@@ -12,7 +12,7 @@ export const exampleMonthlyData = {
         id: "1",
         type: { value: "retirement", label: "Retirement" },
         name: "Acme Inc. paycheck",
-        amount: 100050,
+        amount: 1850,
         recurring: true,
         date: "Saturday, October 5, 2019"
       },
@@ -20,7 +20,7 @@ export const exampleMonthlyData = {
         id: "2",
         type: { value: "retirement", label: "Retirement" },
         name: "Acme Inc. paycheck",
-        amount: 100050,
+        amount: 1850,
         recurring: true,
         date: "Thursday, October 24, 2019"
       }
@@ -31,6 +31,22 @@ export const exampleMonthlyData = {
         type: { value: "rent", label: "Rent or mortgage" },
         name: "Apt. Rent",
         amount: 170050,
+        recurring: true,
+        date: "Tuesday, October 15, 2019"
+      },
+      "3": {
+        id: "3",
+        type: { value: "savings", label: "Savings" },
+        name: "for car",
+        amount: 200,
+        recurring: true,
+        date: "Tuesday, October 15, 2019"
+      },
+      "4": {
+        id: "4",
+        type: { value: "savings", label: "Savings" },
+        name: "Holiday Gifts",
+        amount: 25,
         recurring: true,
         date: "Tuesday, October 15, 2019"
       }
