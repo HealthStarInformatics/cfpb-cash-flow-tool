@@ -10,9 +10,3 @@ export const filterByDate = (inputs, date) => {
   );
   return todaysKeys.map(key => inputs[key]);
 };
-
-/**
- * Check if object has any entries
- * @param {Object} data
- */
-export const hasEntries = data => Object.keys(data).length > 0;

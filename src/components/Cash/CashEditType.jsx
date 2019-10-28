@@ -1,10 +1,11 @@
 import React from "react";
-import { capitalize } from "../../services/stringServices";
 import Select from "react-select";
 
 export const CashEditType = ({ config, type, setType }) => (
   <div className="type modal-input">
-    <label htmlFor="type">{capitalize(config.type)} type</label>
+    <label htmlFor="type">
+      <span className="capitalize">{config.type}</span> type
+    </label>
     <Select
       value={type}
       onChange={setType}

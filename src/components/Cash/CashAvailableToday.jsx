@@ -3,6 +3,7 @@ import { AppContext } from "../../App";
 import { formatCurrency, totalAmount } from "../../services/currencyServices";
 import { joinClasses } from "../../services/stringServices";
 import { filterByDate } from "../../services/objectServices";
+import { isEmpty } from "lodash";
 
 export const CashAvailableToday = ({ date, startingBalance = 0 }) => {
   const { monthlyData, selectedMonth, selectedDayBalance } = useContext(
@@ -26,9 +27,7 @@ export const CashAvailableToday = ({ date, startingBalance = 0 }) => {
     totalAmount(filteredIncomes) -
     totalAmount(filteredExpenses);
 
-  const hasEntries =
-    Object.keys(filteredIncomes).length > 0 ||
-    Object.keys(filteredExpenses).length > 0;
+  const hasEntries = !isEmpty(filteredIncomes) || !isEmpty(filteredExpenses);
 
   const classname =
     selectedDayBalance || hasEntries
