@@ -29,3 +29,13 @@ export const toCents = str => {
  */
 export const totalAmount = data =>
   data.reduce((prev, curr) => prev + Number(curr.amount), 0);
+
+/**
+ * Returns the percentage of a subtotal of a grandtotal
+ */
+
+export const findPercentage = (subtotal, grandtotal) => {
+  console.log("subtotal", subtotal);
+  console.log("grandtotal", grandtotal);
+  return Math.floor((subtotal / grandtotal) * 100);
+};

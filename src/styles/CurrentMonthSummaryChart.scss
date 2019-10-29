@@ -1,0 +1,21 @@
+@import "colors.scss";
+
+//CurrentMonthSummaryChart
+.current-month-summary-chart {
+  li {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    margin-bottom: 8px;
+  }
+
+  .title {
+    text-align: left;
+    width: 30%;
+    font-weight: 500;
+  }
+}
+
+.total-value {
+  padding-left: 10px;
+}
