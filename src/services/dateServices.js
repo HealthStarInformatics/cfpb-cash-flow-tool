@@ -38,6 +38,14 @@ export const dayString = dateString => {
   let month = MONTH_NAMES[date.getMonth()];
   let dayNumber = date.getDate();
 
+  let validDate = true;
+  [day, month, dayNumber].forEach(part => {
+    if ([undefined, NaN].includes(part)) {
+      validDate = false;
+    }
+  });
+
+  if (!validDate) return "Invalid Date";
   return `${day}, ${month} ${dayNumber}`;
 };
 
@@ -46,7 +54,7 @@ export const dayString = dateString => {
  * @param {Number} day Day of month
  * @param {String} monthYear ex. "October 2019"
  */
-export const makeDateString = (day, monthYear) => {
+export const convertToDateString = (day, monthYear) => {
   let [month, year] = monthYear.split(" ");
   month = getMonthNumber(month) + 1;
   const dayString = day < 10 ? `0${day}` : day;
@@ -61,6 +69,7 @@ export const makeDateString = (day, monthYear) => {
 export const generateMonthOptions = (monthsAhead = 6) =>
   [...Array(monthsAhead + 1).keys()].map(add => {
     const today = new Date();
+    today.setDate(1);
     today.setMonth(today.getMonth() + add);
 
     const thisMonth = today.getMonth();

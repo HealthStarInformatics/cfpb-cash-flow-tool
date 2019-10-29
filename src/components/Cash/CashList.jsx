@@ -1,8 +1,8 @@
+import { isEmpty } from "lodash";
 import React from "react";
 import { Divider } from "../shared/Divider";
 import { AddCashButton } from "./AddCashButton";
 import { CashListEntry } from "./CashListEntry";
-import { hasEntries } from "../../services/objectServices";
 
 const CashListEmptyState = () => (
   <p className="empty-state">You haven't added anything yet.</p>
@@ -18,7 +18,7 @@ const CashListEntries = ({ data, ...setters }) => (
 );
 
 export const CashList = ({ data, editing, addButtonText, ...setters }) => {
-  const empty = !hasEntries(data);
+  const empty = isEmpty(data);
   const classname = "cash-list" + (empty ? " empty" : "");
 
   return (
