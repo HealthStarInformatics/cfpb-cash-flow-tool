@@ -32,8 +32,11 @@ export const totalAmount = data =>
 
 /**
  * Returns the percentage of a subtotal of a grandtotal
+ * @param {Number} subtotal
+ * @param {Number} grandtotal
+ * @returns {Integer}
  */
-
 export const findPercentage = (subtotal, grandtotal) => {
+  if (!grandtotal) return 0;
   return Math.floor((subtotal / grandtotal) * 100);
 };

@@ -1,9 +1,10 @@
 import React from "react";
-import { capitalize } from "../../services/stringServices";
 
 export const CashEditName = ({ config, name, setName }) => (
   <div className="name modal-input">
-    <label htmlFor="name">{capitalize(config.type)} name</label>
+    <label htmlFor="name">
+      <span className="capitalize">{config.type}</span> name
+    </label>
     <p className="description">
       Giving your {config.type} a name will help you identify it from other
       similar {config.type}s.

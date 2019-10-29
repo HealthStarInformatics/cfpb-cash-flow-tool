@@ -4,7 +4,10 @@ import { AppContext } from "../../App";
 import { range } from "../../services/arrayServices";
 import { createWeekRows, getMonthInfo } from "../../services/calendarServices";
 import { totalAmount } from "../../services/currencyServices";
-import { makeDateString, MAX_DAYS_IN_MONTH } from "../../services/dateServices";
+import {
+  convertToDateString,
+  MAX_DAYS_IN_MONTH
+} from "../../services/dateServices";
 import { filterByDate } from "../../services/objectServices";
 import "../../styles/Calendar.scss";
 import { DayModal } from "../DayModal";
@@ -49,7 +52,7 @@ export const Calendar = () => {
 
   // Create an entry for each day of month
   range(1, daysInMonth + 1).forEach(dayNumber => {
-    todaysDate = makeDateString(dayNumber, selectedMonth.label);
+    todaysDate = convertToDateString(dayNumber, selectedMonth.label);
     todaysIncomes = filterByDate(incomes, todaysDate);
     todaysExpenses = filterByDate(expenses, todaysDate);
     todayHasEntries = !isEmpty(todaysIncomes) || !isEmpty(todaysExpenses);
