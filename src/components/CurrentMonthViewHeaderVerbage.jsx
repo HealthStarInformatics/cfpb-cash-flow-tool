@@ -7,8 +7,6 @@ import Icon from "./Icon";
 import "../styles/CurrentMonthViewHeader.scss";
 
 const CurrentMonthViewHeaderVerbage = ({ modalvisible, setModalvisible }) => {
-  console.log("changeflag", modalvisible);
-
   const changeModal = () => {
     setModalvisible(!modalvisible);
   };

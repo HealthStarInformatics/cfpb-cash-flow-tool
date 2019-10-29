@@ -3,7 +3,6 @@ import React from "react";
 import "../styles/CurrentMonthSummaryChart.scss";
 
 const ProgressBar = props => {
-  console.log("progressBar: props", props);
   const divStyle = {
     height: "16",
     width: props.percentage,

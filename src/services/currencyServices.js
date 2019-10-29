@@ -35,7 +35,5 @@ export const totalAmount = data =>
  */
 
 export const findPercentage = (subtotal, grandtotal) => {
-  console.log("subtotal", subtotal);
-  console.log("grandtotal", grandtotal);
   return Math.floor((subtotal / grandtotal) * 100);
 };
