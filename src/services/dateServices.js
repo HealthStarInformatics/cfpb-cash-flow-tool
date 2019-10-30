@@ -29,11 +29,11 @@ export const MAX_DAYS_IN_MONTH = 31;
 
 /**
  * Returns a string for the day
- * @param {Number} timestamp
+ * @param {String} dateString YYYY-MM-DD
  * @returns {String} ex. 'Thursday, October 31'
  */
-export const dayString = timestamp => {
-  let date = new Date(timestamp);
+export const dayString = dateString => {
+  let date = new Date(dateString + "T00:00:00");
   let day = DAY_NAMES[date.getDay()];
   let month = MONTH_NAMES[date.getMonth()];
   let dayNumber = date.getDate();
@@ -42,18 +42,16 @@ export const dayString = timestamp => {
 };
 
 /**
- * Returns the number of milliseconds since the epoch
- * @param {Number} dayOfMonth 31
- * @param {String} monthYear "October 2019"
+ *
+ * @param {Number} day Day of month
+ * @param {String} monthYear ex. "October 2019"
  */
-export const convertToTimestamp = (dayOfMonth, monthYear) => {
+export const makeDateString = (day, monthYear) => {
   let [month, year] = monthYear.split(" ");
-  month = getMonthNumber(month);
-  year = Number.parseInt(year);
+  month = getMonthNumber(month) + 1;
+  const dayString = day < 10 ? `0${day}` : day;
 
-  let date = new Date(year, month, dayOfMonth);
-
-  return date.getTime();
+  return `${year}-${month}-${dayString}`;
 };
 
 /**

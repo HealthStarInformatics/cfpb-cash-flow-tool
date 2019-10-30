@@ -14,7 +14,7 @@ export const exampleMonthlyData = {
         name: "Acme Inc. paycheck",
         amount: 185000,
         recurring: true,
-        date: 1570255200000
+        date: "2019-10-05"
         // date: "Saturday, October 5, 2019"
       },
       "2": {
@@ -23,7 +23,7 @@ export const exampleMonthlyData = {
         name: "Acme Inc. paycheck",
         amount: 185000,
         recurring: true,
-        date: 1571896800000
+        date: "2019-10-24"
         //  date: "Thursday, October 24, 2019"
       }
     },
@@ -34,7 +34,7 @@ export const exampleMonthlyData = {
         name: "Apt. Rent",
         amount: 170000,
         recurring: true,
-        date: 1571119200000
+        date: "2019-10-15"
         //  date: "Tuesday, October 15, 2019"
       },
       "3": {
@@ -43,7 +43,7 @@ export const exampleMonthlyData = {
         name: "for car",
         amount: 20000,
         recurring: true,
-        date: 1571119200000
+        date: "2019-10-15"
         //  date: "Tuesday, October 15, 2019"
       },
       "4": {
@@ -52,7 +52,7 @@ export const exampleMonthlyData = {
         name: "Holiday Gifts",
         amount: 25,
         recurring: true,
-        date: 1571119200000
+        date: "2019-10-15"
         //  date: "Tuesday, October 15, 2019"
       }
     }
@@ -72,7 +72,7 @@ export const exampleMonthlyData = {
         name: "Acme Inc. paycheck",
         amount: 110000,
         recurring: true,
-        date: 1573801200000
+        date: "2019-11-15"
         //  date: "Friday, November 15, 2019"
       }
     },
@@ -83,7 +83,7 @@ export const exampleMonthlyData = {
         name: "Apt. Rent",
         amount: 100000,
         recurring: true,
-        date: 1572937200000
+        date: "2019-11-05"
         //  date: "Tuesday, November 5, 2019"
       }
     }
