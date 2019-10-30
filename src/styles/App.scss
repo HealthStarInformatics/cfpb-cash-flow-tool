@@ -55,16 +55,23 @@ ul {
   padding-left: 0;
 }
 
+.Nav_link {
+  cursor: pointer;
+}
+
 .Nav_link:link {
   color: $pacific;
+  cursor: pointer;
 }
 
 .Nav_link:active {
   color: $pacific;
+  cursor: pointer;
 }
 
 .Nav_link:visited {
   color: $pacific;
+  cursor: pointer;
 }
 
 .page-title {

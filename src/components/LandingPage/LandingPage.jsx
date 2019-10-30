@@ -2,10 +2,10 @@ import React from "react";
 
 import LandingPageHeader from "./LandingPageHeader";
 import LandingPageHero from "./LandingPageHero";
-import PrivacyNotice from "./PrivacyNotice";
-import SiteFooter from "./SiteFooter";
+import PrivacyNotice from "../shared/PrivacyNotice";
+import SiteFooter from "../shared/SiteFooter";
 
-import "../styles/LandingPage.scss";
+import "../../styles/LandingPage.scss";
 
 export const LandingPage = () => (
   <section id="landing">

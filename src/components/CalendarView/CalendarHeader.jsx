@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import img1 from "../assets/calendar-header-img.png";
+import img1 from "../../assets/calendar-header-img.png";
 
-import "../styles/CalendarView.scss";
+import "../../styles/CalendarView.scss";
 
 const CalendarHeader = () => (
   <div className="calendar-header-wrapper">

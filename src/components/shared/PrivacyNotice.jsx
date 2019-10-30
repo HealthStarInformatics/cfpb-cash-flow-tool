@@ -3,7 +3,7 @@ import { NavLink as Link } from "react-router-dom";
 
 import Icon from "./Icon";
 
-import "../styles/PrivacyNotice.scss";
+import "../../styles/PrivacyNotice.scss";
 
 const PrivacyNotice = () => (
   <div className="privacy-notice-wrapper">

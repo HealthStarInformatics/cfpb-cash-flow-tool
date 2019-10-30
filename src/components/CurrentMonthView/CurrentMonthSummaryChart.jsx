@@ -1,10 +1,13 @@
 import React, { useContext } from "react";
 
-import { formatCurrency, findPercentage } from "../services/currencyServices";
-import { AppContext } from "../App";
+import {
+  formatCurrency,
+  findPercentage
+} from "../../services/currencyServices";
+import { AppContext } from "../../App";
 import ProgressBar from "./ProgressBar";
 
-import "../styles/CurrentMonthSummaryChart.scss";
+import "../../styles/CurrentMonthSummaryChart.scss";
 
 const CurrentMonthSummaryChart = () => {
   const { monthlyData, selectedMonth } = useContext(AppContext);

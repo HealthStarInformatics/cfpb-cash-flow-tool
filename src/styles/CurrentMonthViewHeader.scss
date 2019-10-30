@@ -1,7 +1,6 @@
 @import "colors.scss";
 
 //CurrentMonthViewHeader
-
 .current-month-view-header-wrapper {
   .subtitle {
     margin-bottom: 5px;
@@ -9,11 +8,9 @@
     font-size: 1.2rem;
     font-weight: 500;
   }
-
-  .description {
-    margin-bottom: 13px;
-  }
 }
+
+// CurrentMonthViewHeaderVerbage
 .starting-balance-input {
   border: 1px solid $grey80;
   padding: 7px;

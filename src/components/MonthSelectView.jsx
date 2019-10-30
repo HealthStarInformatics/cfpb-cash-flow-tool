@@ -5,9 +5,9 @@ import { AppContext } from "../App";
 import headerImg from "../assets/month-select-header.png";
 import { generateMonthOptions } from "../services/dateServices";
 import "../styles/View.scss";
-import PrivacyNotice from "./PrivacyNotice";
+import PrivacyNotice from "./shared/PrivacyNotice";
 import { Divider } from "./shared/Divider";
-import SiteFooter from "./SiteFooter";
+import SiteFooter from "./shared/SiteFooter";
 import { ViewHeader } from "./ViewHeader";
 
 export const MonthSelectView = () => {

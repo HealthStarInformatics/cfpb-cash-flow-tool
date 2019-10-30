@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles/CurrentMonthSummaryChart.scss";
+import "../../styles/CurrentMonthSummaryChart.scss";
 
 const ProgressBar = props => {
   const divStyle = {

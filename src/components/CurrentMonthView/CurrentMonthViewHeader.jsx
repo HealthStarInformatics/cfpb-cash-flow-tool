@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import CurrentMonthViewHeaderVerbage from "./CurrentMonthViewHeaderVerbage";
 
-import "../styles/CurrentMonthViewHeader.scss";
+import "../../styles/CurrentMonthViewHeader.scss";
 
 const CurrentMonthViewHeader = () => {
   const [modalvisible, setModalvisible] = useState(false);
