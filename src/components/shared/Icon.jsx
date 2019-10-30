@@ -1,21 +1,22 @@
 import React from "react";
 
-import { ReactComponent as PlusSign } from "../assets/plus-sign-icon.svg";
-import { ReactComponent as ErrorIcon } from "../assets/error-icon-round.svg";
-import { ReactComponent as DollarSignIcon } from "../assets/dollar-sign.svg";
-import { ReactComponent as PencilEditIcon } from "../assets/pencil-edit.svg";
-import { ReactComponent as StarIcon } from "../assets/star-icon.svg";
-import { ReactComponent as ExclamationPointIcon } from "../assets/exclamation-point.svg";
-import { ReactComponent as LightBulb } from "../assets/light-bulb.svg";
-import { ReactComponent as FacebookIcon } from "../assets/facebook-square.svg";
-import { ReactComponent as TwitterIcon } from "../assets/twitter-square.svg";
-import { ReactComponent as LinkedInIcon } from "../assets/linkedin-square.svg";
-import { ReactComponent as FlickrIcon } from "../assets/flickr-square.svg";
-import { ReactComponent as YouTubeIcon } from "../assets/youtube-square.svg";
-import { ReactComponent as ExternalLinkIcon } from "../assets/external-link.svg";
-import { ReactComponent as UpArrowIcon } from "../assets/up-arrow.svg";
+import { ReactComponent as PlusSign } from "../../assets/plus-sign-icon.svg";
+import { ReactComponent as ErrorIcon } from "../../assets/error-icon-round.svg";
+import { ReactComponent as DollarSignIcon } from "../../assets/dollar-sign.svg";
+import { ReactComponent as PencilEditIcon } from "../../assets/pencil-edit.svg";
+import { ReactComponent as StarIcon } from "../../assets/star-icon.svg";
+import { ReactComponent as ExclamationPointIcon } from "../../assets/exclamation-point.svg";
+import { ReactComponent as LightBulb } from "../../assets/light-bulb.svg";
+import { ReactComponent as FacebookIcon } from "../../assets/facebook-square.svg";
+import { ReactComponent as TwitterIcon } from "../../assets/twitter-square.svg";
+import { ReactComponent as LinkedInIcon } from "../../assets/linkedin-square.svg";
+import { ReactComponent as FlickrIcon } from "../../assets/flickr-square.svg";
+import { ReactComponent as YouTubeIcon } from "../../assets/youtube-square.svg";
+import { ReactComponent as ExternalLinkIcon } from "../..//assets/external-link.svg";
+import { ReactComponent as UpArrowIcon } from "../../assets/up-arrow.svg";
+import { ReactComponent as SaveIcon } from "../../assets/disk.svg";
 
-import "../styles/Icon.scss";
+import "../../styles/Icon.scss";
 
 function Icon({ type }) {
   return (
@@ -50,6 +51,8 @@ function Icon({ type }) {
             return <UpArrowIcon className="up-arrow-icon" />;
           case "external-link-icon":
             return <ExternalLinkIcon className="external-link-icon" />;
+          case "save-icon":
+            return <SaveIcon className="save-icon" />;
           default:
             return <div>There is an error on the Icon component</div>;
         }

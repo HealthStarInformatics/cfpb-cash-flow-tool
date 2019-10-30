@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import { Link, Redirect } from "react-router-dom";
-import { AppContext } from "../App";
-import "../styles/CalendarView.scss";
+import { AppContext } from "../../App";
+import "../../styles/CalendarView.scss";
 import CalendarHeader from "./CalendarHeader";
 import CalendarMonthView from "./CalendarMonthView";
-import PrivacyNotice from "./PrivacyNotice";
-import SectionTip from "./SectionTip";
-import SiteFooter from "./SiteFooter";
-import { initializeMonthlyData } from "../services/calendarServices";
+import PrivacyNotice from "./../shared/PrivacyNotice";
+import SectionTip from "./../SectionTip";
+import SiteFooter from "./../shared/SiteFooter";
+import { initializeMonthlyData } from "../../services/calendarServices";
 
 export const CalendarView = () => {
   const { selectedMonth, monthlyData, setState } = useContext(AppContext);

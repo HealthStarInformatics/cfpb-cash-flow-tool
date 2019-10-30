@@ -3,9 +3,9 @@ import { NavLink as Link } from "react-router-dom";
 
 import Icon from "./Icon";
 
-import usflag from "../assets/us-flag.png";
+import usflag from "../../assets/us-flag.png";
 
-import "../styles/SiteFooter.scss";
+import "../../styles/SiteFooter.scss";
 
 const SiteFooter = () => (
   <div className="site-footer-wrapper">

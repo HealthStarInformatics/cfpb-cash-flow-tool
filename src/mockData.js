@@ -4,7 +4,7 @@ export const exampleMonthlyData = {
       checking: 0,
       prepaid: 0,
       other: 0,
-      total: 50000,
+      total: 0,
       startDay: 4
     },
     incomes: {
@@ -62,7 +62,7 @@ export const exampleMonthlyData = {
       checking: 0,
       prepaid: 0,
       other: 0,
-      total: -500,
+      total: 0,
       startDay: null
     },
     incomes: {

@@ -2,7 +2,7 @@ import React from "react";
 
 import Icon from "./Icon";
 
-import "../styles/ActionLink.scss";
+import "../../styles/ActionLink.scss";
 
 const ActionLink = ({ text, icon }) => {
   return (

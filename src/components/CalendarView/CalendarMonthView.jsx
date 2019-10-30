@@ -1,10 +1,10 @@
 import React from "react";
-import "../styles/CalendarView.scss";
-import Calendar from "./Calendar/Calendar";
-import CashAvailableMonth from "./CashAvailableMonth";
-import CurrentMonthSummary from "./CurrentMonthSummary";
-import CurrentMonthViewHeader from "./CurrentMonthViewHeader";
-import NotificationCenter from "./NotificationCenter";
+import "../../styles/CalendarView.scss";
+import Calendar from "./../Calendar/Calendar";
+import CashAvailableMonth from "./../CashAvailableMonth";
+import CurrentMonthSummary from "./../CurrentMonthView/CurrentMonthSummary";
+import CurrentMonthViewHeader from "./../CurrentMonthView/CurrentMonthViewHeader";
+import NotificationCenter from "./../shared/NotificationCenter";
 
 export const CalendarMonthView = ({ title }) => {
   return (

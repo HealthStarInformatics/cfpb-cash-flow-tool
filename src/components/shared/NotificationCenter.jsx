@@ -2,7 +2,7 @@ import React from "react";
 
 import Icon from "./Icon";
 
-import "../styles/NotificationCenter.scss";
+import "../../styles/NotificationCenter.scss";
 
 const NotificationCenter = () => (
   <div className="notification-center-wrapper">

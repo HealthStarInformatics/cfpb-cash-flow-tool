@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import img1 from "../assets/landing-page-hero-img.png";
+import img1 from "../../assets/landing-page-hero-img.png";
 
-import "../styles/LandingPageHero.scss";
+import "../../styles/LandingPageHero.scss";
 
 const LandingPageHero = () => (
   <div className="landing-page-hero-wrapper">

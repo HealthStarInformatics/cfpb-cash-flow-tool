@@ -1,10 +1,10 @@
 import React from "react";
 import headerImage from "../../assets/strategies-header-img.png";
 import "../../styles/StrategyView.scss";
-import PrivacyNotice from "../PrivacyNotice";
+import PrivacyNotice from "../shared/PrivacyNotice";
 import SectionTip from "../SectionTip";
 import { Divider } from "../shared/Divider";
-import SiteFooter from "../SiteFooter";
+import SiteFooter from "../shared/SiteFooter";
 import { ViewHeader } from "../ViewHeader";
 import { StrategyCard } from "./StrategyCard";
 
