@@ -18,3 +18,9 @@ export const CashEditName = ({ config, name, setName }) => (
     />
   </div>
 );
+
+CashEditName.defaultProps = {
+  config: {},
+  name: "",
+  setName: null
+};

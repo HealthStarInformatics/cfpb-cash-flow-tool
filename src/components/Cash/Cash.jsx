@@ -1,21 +1,18 @@
-import React, { useContext, useState } from "react";
-import { AppContext } from "../../App";
+import React, { useState } from "react";
 import { cashConfig } from "../../config/cashConfig";
-// import { filterByDate } from "../../services/objectServices";
 import "../../styles/Cash.scss";
 import { CashEdit } from "./CashEdit";
 import { CashHeader } from "./CashHeader";
 import { CashList } from "./CashList";
 
 /**
- * CashIn/CashOut
+ * CashIn/CashOut sections of DayModal
  * @param {String} section incomes/expenses
  * @param {Date} date selected date
  */
-export const Cash = ({ section = "incomes", date, data, setState }) => {
+export const Cash = ({ section, date, data, setState, selectedMonth }) => {
   const [editing, setEditing] = useState(false);
   const [selected, setSelected] = useState({});
-  const { selectedMonth } = useContext(AppContext);
 
   if (!selectedMonth) return null;
 
@@ -56,3 +53,11 @@ export const Cash = ({ section = "incomes", date, data, setState }) => {
 };
 
 export default Cash;
+
+Cash.defaultProps = {
+  section: "incomes",
+  date: null,
+  data: [],
+  setState: null,
+  selectedMonth: null
+};

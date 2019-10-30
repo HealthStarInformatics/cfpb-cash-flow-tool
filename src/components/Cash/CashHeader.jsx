@@ -15,3 +15,10 @@ export const CashHeader = ({ icon, title, editing, setEditing }) => (
     )}
   </div>
 );
+
+CashHeader.defaultProps = {
+  icon: "",
+  title: "",
+  editing: false,
+  setEditing: null
+};

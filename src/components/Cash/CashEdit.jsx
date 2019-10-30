@@ -5,14 +5,7 @@ import { CashEditName } from "./CashEditName";
 import { CashEditType } from "./CashEditType";
 import { LabeledCheckbox } from "../shared/LabeledCheckbox";
 
-export const CashEdit = ({
-  current,
-  section,
-  // selectedMonth,
-  setEditing,
-  setState,
-  data
-}) => {
+export const CashEdit = ({ current, section, setEditing, setState, data }) => {
   const [type, setType] = useState(current.type);
   const [name, setName] = useState(current.name || "");
   const [amount, setAmount] = useState(current.amount || "");
@@ -20,6 +13,7 @@ export const CashEdit = ({
 
   const config = cashConfig[section];
 
+  // Save entry to local state
   const saveEntry = e => {
     e.preventDefault();
     const thisId = current.id || Date.now();
@@ -38,6 +32,7 @@ export const CashEdit = ({
     ]);
   };
 
+  // Delete entry from local state
   const deleteEntry = e => {
     e.preventDefault();
     data = data.filter(entry => entry.id !== current.id);
@@ -63,7 +58,7 @@ export const CashEdit = ({
 
       {type && (
         <div className="form-actions">
-          <button className="primary" type="submit">
+          <button className="primary" type="submit" onClick={saveEntry}>
             Save this {config.type}
           </button>
           <button className="secondary" onClick={deleteEntry}>
@@ -73,4 +68,12 @@ export const CashEdit = ({
       )}
     </form>
   );
+};
+
+CashEdit.defaultProps = {
+  section: "incomes",
+  current: {},
+  setEditing: null,
+  setState: null,
+  data: []
 };
