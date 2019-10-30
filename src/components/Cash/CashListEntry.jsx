@@ -25,3 +25,9 @@ export const CashListEntry = props => {
     </div>
   );
 };
+
+CashListEntry.defaultProps = {
+  current: {},
+  setEditing: null,
+  setSelected: null
+};

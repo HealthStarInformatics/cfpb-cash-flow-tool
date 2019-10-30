@@ -69,6 +69,7 @@ export const DayModal = ({ closeModal, selectedDate }) => {
           data={incomes}
           date={selectedDate}
           setState={setIncomes}
+          selectedMonth={selectedMonth}
         />
         <Divider color="dark" />
         <Cash
@@ -76,6 +77,7 @@ export const DayModal = ({ closeModal, selectedDate }) => {
           data={expenses}
           date={selectedDate}
           setState={setExpenses}
+          selectedMonth={selectedMonth}
         />
         <CashAvailableToday
           incomes={incomes}

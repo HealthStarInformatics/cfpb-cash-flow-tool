@@ -27,3 +27,10 @@ const handleClick = (setEditing, setSelected, date) => {
     date
   });
 };
+
+AddCashButton.defaultProps = {
+  addButtonText: null,
+  setEditing: null,
+  setSelected: null,
+  date: null
+};

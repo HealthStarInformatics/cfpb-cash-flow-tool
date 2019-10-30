@@ -13,3 +13,8 @@ export const CashEditAmount = ({ amount, setAmount }) => (
     />
   </div>
 );
+
+CashEditAmount.defaultProps = {
+  amount: 0,
+  setAmount: null
+};

@@ -29,3 +29,11 @@ export const CashList = ({ data, editing, addButtonText, ...setters }) => {
     </div>
   );
 };
+
+CashList.defaultProps = {
+  data: [],
+  editing: false,
+  addButtonText: "",
+  setSelected: null,
+  setEditing: null
+};

@@ -14,3 +14,9 @@ export const CashEditType = ({ config, type, setType }) => (
     />
   </div>
 );
+
+CashEditType.defaultProps = {
+  config: {},
+  type: "",
+  setType: null
+};

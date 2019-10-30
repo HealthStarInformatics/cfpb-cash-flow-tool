@@ -24,3 +24,10 @@ export const CashAvailableToday = ({
     </div>
   );
 };
+
+CashAvailableToday.defaultProps = {
+  incomes: [],
+  expenses: [],
+  startBalance: null,
+  isStyles: null
+};
