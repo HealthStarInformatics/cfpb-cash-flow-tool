@@ -1,3 +1,6 @@
+// ! Warning !
+//   Unit tests rely on this data, be careful when changing
+//    - Calendar.test.js
 export const exampleMonthlyData = {
   "October 2019": {
     startingBalance: {
@@ -28,6 +31,15 @@ export const exampleMonthlyData = {
       }
     },
     expenses: {
+      "1": {
+        id: "1",
+        type: { value: "rent", label: "Rent or mortgage" },
+        name: "Apt. Rent",
+        amount: 170000,
+        recurring: true,
+        date: "2019-10-01"
+        //  date: "Tuesday, October 1, 2019"
+      },
       "2": {
         id: "2",
         type: { value: "rent", label: "Rent or mortgage" },

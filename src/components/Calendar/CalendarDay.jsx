@@ -42,7 +42,7 @@ export const CalendarDay = ({
   };
 
   return (
-    <div className={classes} onClick={handleClick}>
+    <div id={`day${number}`} className={classes} onClick={handleClick}>
       <div className="number">{number}</div>
       {showCashStyling && <div className="dots">•••••</div>}
       {showCashStyling && (
