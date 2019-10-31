@@ -11,3 +11,7 @@ export const CalendarBody = ({ rows }) => {
     </div>
   ));
 };
+
+CalendarBody.defaultProps = {
+  rows: []
+};
