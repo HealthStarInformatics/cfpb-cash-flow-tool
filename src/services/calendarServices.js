@@ -65,7 +65,7 @@ export const defaultMonthlyDataEntry = {
     prepaid: 0,
     other: 0,
     total: 0,
-    startDay: null
+    startDay: 1
   },
   incomes: {},
   expenses: {}
