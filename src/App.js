@@ -5,9 +5,9 @@ import { DayModal } from "./components/DayModal";
 import { LandingPage } from "./components/LandingPage/LandingPage";
 import { MonthSelectView } from "./components/MonthSelectView";
 import { StrategyView } from "./components/StrategyView/StrategyView";
-import { exampleMonthlyData } from "./mockData";
+// import { exampleMonthlyData } from "./mockData";
 import "./styles/App.scss";
-// import { getFromStorage, saveToStorage } from "../src/services/storageServices";
+import { getFromStorage, saveToStorage } from "../src/services/storageServices";
 
 export const AppContext = React.createContext();
 
@@ -15,21 +15,18 @@ class App extends React.Component {
   state = {
     selectedMonth: null,
     selectedDay: null,
-    monthlyData: exampleMonthlyData // TODO: delete example data
+    monthlyData: {} // TODO: delete example data
   };
 
-  // componentDidMount() {
-  //   const monthlyData = getFromStorage(
-  //     "monthlyData",
-  //     this.state["monthlyData"]
-  //   );
+  componentDidMount() {
+    const monthlyData = getFromStorage("monthlyData");
 
-  //   if (monthlyData) this.setState({ monthlyData });
-  // }
+    if (monthlyData) this.setState({ monthlyData });
+  }
 
-  // componentDidUpdate() {
-  //   saveToStorage("monthlyData", this.state["monthlyData"]);
-  // }
+  componentDidUpdate() {
+    saveToStorage("monthlyData", this.state["monthlyData"]);
+  }
 
   render() {
     const contextObject = {
@@ -37,7 +34,7 @@ class App extends React.Component {
       setState: this.setState.bind(this)
     };
 
-    return ~(
+    return (
       <AppContext.Provider value={contextObject}>
         <Switch>
           <Route path="/" exact component={LandingPage} />
