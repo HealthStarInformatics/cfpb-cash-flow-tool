@@ -4,8 +4,14 @@ import {
   formatCurrency,
   findPercentage
 } from "../../services/currencyServices";
+
+import {
+  savingsTotal,
+  expenseTotal,
+  monthGrandTotal
+} from "../../services/cashFlowServices.js";
 import { AppContext } from "../../App";
-import ProgressBar from "./ProgressBar";
+import ProgressBar from "../shared/ProgressBar";
 
 import "../../styles/CurrentMonthSummaryChart.scss";
 
@@ -23,18 +29,8 @@ const CurrentMonthSummaryChart = () => {
       type: key.type
     }));
 
-  const savingsTotal = expenseObj
-    .filter(item => item.type.value === "savings")
-    .map(entry => entry.amount)
-    .reduce((total, current) => total + current, 0);
-
-  const expenseTotal = expenseObj
-    .filter(item => item.type.value !== "savings")
-    .map(entry => entry.amount)
-    .reduce((total, current) => total + current, 0);
-
-  // QUESTION:  What is the calculation for the TOTAL, given that the bars will show a percentage of a total
-  const monthGrandTotal = incomeTotal + expenseTotal + savingsTotal;
+  const monthGrandTotal =
+    incomeTotal + expenseTotal(expenseObj) + savingsTotal(expenseObj);
 
   return (
     <div className="current-month-summary-chart-wrapper">
@@ -49,16 +45,26 @@ const CurrentMonthSummaryChart = () => {
         <li>
           <div className="title">Expenses</div>
           <ProgressBar
-            percentage={findPercentage(expenseTotal, monthGrandTotal)}
+            percentage={findPercentage(
+              expenseTotal(expenseObj),
+              monthGrandTotal
+            )}
           />
-          <div className="total-value">{formatCurrency(expenseTotal)}</div>
+          <div className="total-value">
+            {formatCurrency(expenseTotal(expenseObj))}
+          </div>
         </li>
         <li>
           <div className="title">Savings</div>
           <ProgressBar
-            percentage={findPercentage(savingsTotal, monthGrandTotal)}
+            percentage={findPercentage(
+              savingsTotal(expenseObj),
+              monthGrandTotal
+            )}
           />
-          <div className="total-value">{formatCurrency(savingsTotal)}</div>
+          <div className="total-value">
+            {formatCurrency(savingsTotal(expenseObj))}
+          </div>
         </li>
       </ul>
     </div>

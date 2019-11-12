@@ -4,7 +4,7 @@ import { AppContext } from "../../App";
 import "../../styles/Modal.scss";
 
 import { CloseModalButton } from "../CloseModalButton";
-import { LabeledMoneyInput } from "./LabeledMoneyInput";
+import { LabeledMoneyInput } from "../shared/LabeledMoneyInput";
 
 const StartingBalanceModal = ({ closeModal, setStartingBal }) => {
   const { monthlyData, selectedMonth, setState } = useContext(AppContext);

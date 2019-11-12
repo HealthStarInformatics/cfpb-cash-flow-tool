@@ -1,20 +1,55 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
-import CurrentMonthViewHeaderVerbage from "./CurrentMonthViewHeaderVerbage";
+import { AppContext } from "../../App";
 
-import "../../styles/CurrentMonthViewHeader.scss";
+import StartingBalanceModal from "./StartingBalanceModal";
+import StartingBalanceEntryEdit from "./StartingBalanceEntryEdit";
 
-const CurrentMonthViewHeader = () => {
+import "../../styles/CurrentMonthViewHeaderVerbage.scss";
+
+const CurrentMonthViewHeaderVerbage = () => {
+  const { monthlyData, selectedMonth, setState } = useContext(AppContext);
   const [modalvisible, setModalvisible] = useState(false);
+  const [editing, setEditing] = useState(false);
+  const [startingBal, setStartingBal] = useState(
+    monthlyData[selectedMonth.label].startingBalance.total
+  );
+  const changeModal = () => {
+    setModalvisible(!modalvisible);
+  };
 
   return (
-    <div className="current-month-view-header-wrapper">
-      <CurrentMonthViewHeaderVerbage
-        modalvisible={modalvisible}
-        setModalvisible={setModalvisible}
-      />
-    </div>
+    <>
+      <div className="wrapper">
+        <p className="subtitle">Your starting balance</p>
+        <div className="description">
+          This is the cash you have available at the start of the month.
+          Estimates are ok.{" "}
+          <div className="Nav_link underline" onClick={changeModal}>
+            Help me calculate
+          </div>
+        </div>
+        {modalvisible && (
+          <StartingBalanceModal
+            closeModal={changeModal}
+            setStartingBal={setStartingBal}
+          />
+        )}
+        <StartingBalanceEntryEdit
+          startingBal={startingBal}
+          setEditing={setEditing}
+          setStartingBal={setStartingBal}
+          editing={editing}
+          setState={setState}
+          month={selectedMonth.label}
+          changeModal={changeModal}
+          startingBalanceTotal={
+            monthlyData[selectedMonth.label].startingBalance.total
+          }
+        />
+      </div>
+    </>
   );
 };
 
-export default CurrentMonthViewHeader;
+export default CurrentMonthViewHeaderVerbage;
