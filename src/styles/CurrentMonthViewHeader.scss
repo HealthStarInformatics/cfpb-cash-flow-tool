@@ -1,0 +1,115 @@
+@import "colors.scss";
+
+//CurrentMonthViewHeader
+.current-month-view-header-wrapper {
+  .subtitle {
+    margin-bottom: 5px;
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+// CurrentMonthViewHeader
+
+.wrapper {
+  .subtitle {
+    margin-bottom: 5px;
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+.input {
+  border: 1px solid $grey80;
+  padding: 7px;
+  justify-content: space-between;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .amount {
+    font-size: 1.1rem;
+    height: 100%;
+    font-weight: 300;
+    font-family: "Avenir Next", Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  span:first-child {
+    padding-right: 5px;
+    width: 2.5rem;
+    height: 100%;
+  }
+
+  span:last-child {
+    width: 1.8rem;
+    height: 100%;
+  }
+
+  .link {
+    cursor: pointer;
+  }
+
+  .action-link {
+    display: flex;
+    flex-direction: row;
+    height: 1.3rem;
+    cursor: pointer;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+.starting-balance-input {
+  border: 1px solid $grey80;
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .starting-balance {
+    display: flex;
+    flex-direction: row;
+
+    .dollar-sign-icon-wrapper {
+      display: flex;
+    }
+  }
+
+  div {
+    align-self: center;
+  }
+
+  .edit-btn {
+    display: flex;
+
+    div {
+      padding: 3px;
+    }
+  }
+}
+
+// StartinBalanceModal
+
+.starting-balance-modal-wrapper {
+  border-top: 2px solid $navy60;
+  border-bottom: 2px solid $navy60;
+  padding: 10px;
+
+  .modal-desc {
+    padding: 8px;
+  }
+
+  .underline {
+    text-decoration: underline;
+    color: $pacific;
+  }
+}
