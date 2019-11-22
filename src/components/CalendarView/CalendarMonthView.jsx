@@ -22,3 +22,5 @@ export const CalendarMonthView = ({ title }) => {
     </div>
   );
 };
+
+// export default CalendarMonthView;
