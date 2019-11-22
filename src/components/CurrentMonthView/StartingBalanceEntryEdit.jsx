@@ -3,7 +3,7 @@ import { formatCurrency, toCents } from "../../services/currencyServices";
 
 import Icon from "../shared/Icon";
 
-import "../../styles/CurrentMonthViewHeaderVerbage.scss";
+import "../../styles/CurrentMonthViewHeader.scss";
 
 const StartingBalanceEntryEdit = ({
   startingBal,
