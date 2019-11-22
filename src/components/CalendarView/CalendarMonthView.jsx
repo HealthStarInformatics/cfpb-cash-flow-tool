@@ -23,4 +23,4 @@ export const CalendarMonthView = ({ title }) => {
   );
 };
 
-export default CalendarMonthView;
+// export default CalendarMonthView;
