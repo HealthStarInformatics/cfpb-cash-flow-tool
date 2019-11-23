@@ -2,14 +2,14 @@ import React, { useContext } from "react";
 import { Link, Redirect } from "react-router-dom";
 import { AppContext } from "../../App";
 import "../../styles/CalendarView.scss";
-import CalendarHeader from "./CalendarHeader";
-import CalendarMonthView from "./CalendarMonthView";
-import PrivacyNotice from "./../shared/PrivacyNotice";
-import SectionTip from "./../SectionTip";
-import SiteFooter from "./../shared/SiteFooter";
+import { CalendarHeader } from "./CalendarHeader";
+import { CalendarMonthView } from "./CalendarMonthView";
+import { PrivacyNotice } from "./../shared/HeadersFooters/PrivacyNotice";
+import { SectionTip } from "./../shared/SectionTip";
+import { SiteFooter } from "./../shared/HeadersFooters/SiteFooter";
 import { initializeMonthlyData } from "../../services/calendarServices";
 
-const CalendarView = () => {
+export const CalendarView = () => {
   const { selectedMonth, monthlyData, setState } = useContext(AppContext);
 
   // Can't show data unless user has selected a month
@@ -42,5 +42,3 @@ const CalendarView = () => {
     </section>
   );
 };
-
-export default CalendarView;

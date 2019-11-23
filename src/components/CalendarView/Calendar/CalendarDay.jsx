@@ -1,7 +1,7 @@
 import React from "react";
-import { joinClasses } from "../../services/stringServices";
-import { ReactComponent as DollarIcon } from "../../assets/dollar-icon.svg";
-import { ReactComponent as MinusIcon } from "../../assets/minus-icon.svg";
+import { joinClasses } from "../../../services/stringServices";
+import { ReactComponent as DollarIcon } from "../../../assets/dollar-icon.svg";
+import { ReactComponent as MinusIcon } from "../../../assets/minus-icon.svg";
 
 /**
  * CalendarDay

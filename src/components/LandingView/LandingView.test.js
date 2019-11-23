@@ -1,10 +1,10 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { LandingPage } from "./LandingPage";
+import { LandingView } from "./LandingView";
 
-describe("LandingPage", () => {
+describe("LandingView", () => {
   it("renders properly", () => {
-    const wrapper = shallow(<LandingPage />);
+    const wrapper = shallow(<LandingView />);
     expect(wrapper.find("#landing").length).toEqual(1);
   });
 });

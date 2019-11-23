@@ -1,10 +1,10 @@
 import React from "react";
 import "../../styles/CalendarView.scss";
-import Calendar from "./../Calendar/Calendar";
-import CashAvailableMonth from "./../CashAvailableMonth";
-import CurrentMonthSummary from "./../CurrentMonthView/CurrentMonthSummary";
-import CurrentMonthViewHeader from "./../CurrentMonthView/CurrentMonthViewHeader";
-import NotificationCenter from "./../shared/NotificationCenter";
+import Calendar from "./Calendar/Calendar";
+import CashAvailableMonth from "./CurrentMonthSummary/CashAvailableMonth";
+import CurrentMonthSummary from "./CurrentMonthSummary/CurrentMonthSummary";
+import CalendarMonthHeader from "../../components/CalendarView/Calendar/CalendarMonthHeader";
+import { NotificationCenter } from "./../shared/NotificationCenter";
 
 export const CalendarMonthView = ({ title }) => {
   return (
@@ -13,7 +13,7 @@ export const CalendarMonthView = ({ title }) => {
         <div className="page-title">{title}</div>
       </div>
       <div className="body">
-        <CurrentMonthViewHeader />
+        <CalendarMonthHeader />
         <NotificationCenter />
         <Calendar />
         <CurrentMonthSummary />
@@ -22,5 +22,3 @@ export const CalendarMonthView = ({ title }) => {
     </div>
   );
 };
-
-// export default CalendarMonthView;

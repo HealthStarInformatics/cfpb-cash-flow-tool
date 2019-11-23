@@ -5,7 +5,7 @@ import img1 from "../../assets/calendar-header-img.png";
 
 import "../../styles/CalendarView.scss";
 
-const CalendarHeader = () => (
+export const CalendarHeader = () => (
   <div className="calendar-header-wrapper">
     <div className="img-wrapper">
       <img className="hero-image" src={img1} alt="calendar"></img>
@@ -20,5 +20,3 @@ const CalendarHeader = () => (
     </p>
   </div>
 );
-
-export default CalendarHeader;

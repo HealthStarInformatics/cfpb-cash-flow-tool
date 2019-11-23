@@ -1,13 +1,13 @@
 import React, { useContext, useState } from "react";
 
-import { AppContext } from "../../App";
+import { AppContext } from "../../../App";
 
-import StartingBalanceModal from "./StartingBalanceModal";
-import StartingBalanceEntryEdit from "./StartingBalanceEntryEdit";
+import { StartingBalanceModal } from "../../CalendarView/StartingBalance/StartingBalanceModal";
+import { StartingBalanceEntryEdit } from "../../CalendarView/StartingBalance/StartingBalanceEntryEdit";
 
-import "../../styles/CurrentMonthViewHeader.scss";
+import "../../../styles/CurrentMonthHeader.scss";
 
-const CurrentMonthViewHeader = () => {
+const CalendarMonthHeader = () => {
   const { monthlyData, selectedMonth, setState } = useContext(AppContext);
   const [modalvisible, setModalvisible] = useState(false);
   const [editing, setEditing] = useState(false);
@@ -50,4 +50,4 @@ const CurrentMonthViewHeader = () => {
   );
 };
 
-export default CurrentMonthViewHeader;
+export default CalendarMonthHeader;

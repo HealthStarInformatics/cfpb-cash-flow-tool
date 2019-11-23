@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import CalendarView from "./components/CalendarView/CalendarView";
-import { DayModal } from "./components/DayModal";
+import { CalendarView } from "./components/CalendarView/CalendarView";
+import { DayModal } from "./components/CalendarView/Calendar/DayModal";
 import { LandingView } from "./components/LandingView/LandingView";
-import { MonthSelectView } from "./components/MonthSelectView";
+import { MonthSelectView } from "./components/MonthSelectView/MonthSelectView";
 import { StrategyView } from "./components/StrategyView/StrategyView";
 // import { exampleMonthlyData } from "./mockData";
 import "./styles/App.scss";

@@ -1,13 +1,13 @@
 import React from "react";
 import { NavLink as Link } from "react-router-dom";
 
-import Icon from "./Icon";
+import { Icon } from "../../shared/Icon";
 
-import usflag from "../../assets/us-flag.png";
+import usflag from "../../../assets/us-flag.png";
 
-import "../../styles/SiteFooter.scss";
+import "../../../styles/SiteFooter.scss";
 
-const SiteFooter = () => (
+export const SiteFooter = () => (
   <div className="site-footer-wrapper">
     <Link
       to="#"
@@ -77,5 +77,3 @@ const SiteFooter = () => (
     </div>
   </div>
 );
-
-export default SiteFooter;

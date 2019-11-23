@@ -1,5 +1,5 @@
 import React from "react";
-import { CalendarDayPlaceholder } from "../components/Calendar/CalendarDay";
+import { CalendarDayPlaceholder } from "../components/CalendarView/Calendar/CalendarDay";
 import { MONTH_NAMES } from "./dateServices";
 
 export const CALENDAR_LABELS = ["S", "M", "T", "W", "T", "F", "S"];

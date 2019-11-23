@@ -1,0 +1,41 @@
+@import "colorsAndSizes.scss";
+
+.sitenavbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100vw;
+  border-bottom: 4px solid $green;
+
+  .image {
+    height: 100%;
+  }
+  .image-container-menu {
+    flex-basis: 20%;
+    border-right: 1px solid gray;
+
+    .menu-icon {
+      height: 100%;
+      padding: 10px;
+    }
+  }
+
+  .image-container-logo {
+    padding-right: 20px;
+    flex-basis: 70%;
+
+    .cf-logo-small {
+      padding: 7px;
+      height: 100%;
+    }
+  }
+
+  .image-container-search {
+    flex-basis: 10%;
+
+    .search-icon {
+      padding: 10px;
+      height: 100%;
+    }
+  }
+}

@@ -18,7 +18,7 @@ import { ReactComponent as SaveIcon } from "../../assets/disk.svg";
 
 import "../../styles/Icon.scss";
 
-function Icon({ type }) {
+export const Icon = ({ type }) => {
   return (
     <div className="icon-background">
       {(() => {
@@ -59,6 +59,4 @@ function Icon({ type }) {
       })()}
     </div>
   );
-}
-
-export default Icon;
+};

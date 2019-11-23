@@ -1,5 +1,5 @@
 import React from "react";
-import { CALENDAR_LABELS } from "../../services/calendarServices";
+import { CALENDAR_LABELS } from "../../../services/calendarServices";
 
 /**
  * Displays the Calendar column labels

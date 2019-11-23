@@ -1,10 +1,10 @@
 import React from "react";
 
-import Icon from "./shared/Icon";
+import { Icon } from "../shared/Icon";
 
-import "../styles/CalendarView.scss";
+import "../../styles/CalendarView.scss";
 
-const SectionTip = ({ text }) => (
+export const SectionTip = ({ text }) => (
   <div className="section-tip-wrapper">
     <Icon type="light-bulb" />
     <div className="text">
@@ -12,5 +12,3 @@ const SectionTip = ({ text }) => (
     </div>
   </div>
 );
-
-export default SectionTip;

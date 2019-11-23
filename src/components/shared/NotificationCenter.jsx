@@ -1,10 +1,10 @@
 import React from "react";
 
-import Icon from "./Icon";
+import { Icon } from "./Icon";
 
 import "../../styles/NotificationCenter.scss";
 
-const NotificationCenter = () => (
+export const NotificationCenter = () => (
   <div className="notification-center-wrapper">
     <Icon type="star-icon" />
     <div className="text">
@@ -14,5 +14,3 @@ const NotificationCenter = () => (
     </div>
   </div>
 );
-
-export default NotificationCenter;
