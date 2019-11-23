@@ -9,7 +9,7 @@ import { SectionTip } from "./../shared/SectionTip";
 import { SiteFooter } from "./../shared/HeadersFooters/SiteFooter";
 import { initializeMonthlyData } from "../../services/calendarServices";
 
-const CalendarView = () => {
+export const CalendarView = () => {
   const { selectedMonth, monthlyData, setState } = useContext(AppContext);
 
   // Can't show data unless user has selected a month
@@ -42,5 +42,3 @@ const CalendarView = () => {
     </section>
   );
 };
-
-export default CalendarView;

@@ -3,15 +3,7 @@ import React, { useContext } from "react";
 import {
   formatCurrency,
   findPercentage
-} from "../../services/currencyServices";
-
-import {
-  savingsTotal,
-  expenseTotal,
-  monthGrandTotal
-} from "../../services/cashFlowServices.js";
-import { AppContext } from "../../App";
-import ProgressBar from "../shared/ProgressBar";
+} from "../../../services/currencyServices";
 
 import {
   savingsTotal,

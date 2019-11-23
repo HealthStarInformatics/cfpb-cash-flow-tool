@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink as Link } from "react-router-dom";
 
 import { Icon } from "../../shared/Icon";
-import { Divider } from "../Divider";
 
 import usflag from "../../../assets/us-flag.png";
 
@@ -25,155 +24,51 @@ export const SiteFooter = () => (
       </button>
     </Link>
 
-    <div className="o-footer_pre">
-      <ul className="top-ul">
-        <li className="divider">
-          <Divider color="dotted" />
-        </li>
-        <li>Contact Us</li>
-        <li className="divider">
-          <Divider color="dotted" />
-        </li>
-        <li>Newsroom</li>
-        <li className="divider">
-          <Divider color="dotted" />
-        </li>
-        <li>Careers</li>
-        <li className="divider">
-          <Divider color="dotted" />
-        </li>
-        <li>CFPB Ombudsman</li>
-        <li className="divider">
-          <Divider color="dotted" />
-        </li>
-      </ul>
-      <ul className="social-media-ul">
-        <li>
-          <Icon type="facebook-icon" />
-        </li>
-        <li>
-          <Icon type="twitter-icon" />
-        </li>
-        <li>
-          <Icon type="linkedin-icon" />
-        </li>
-        <li>
-          <Icon type="youtube-icon" />
-        </li>
-        <li>
-          <Icon type="flickr-icon" />
-        </li>
-      </ul>
-    </div>
-    <div className="o-footer">
-      <div className="o-footer-col">
-        <ul className="o-footer_list m-list">
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li>
-            <Link to="#">FOIA</Link>
-          </li>
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li>
-            <Link to="#">Plain Writing</Link>
-          </li>
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li>
-            <Link to="#">Privacy</Link>
-          </li>
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li>
-            <Link to="#">Accessibility</Link>
-          </li>
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li>
-            <Link to="#">Privacy, Policy & Legal Notices</Link>
-          </li>
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li>
-            <Divider color="dotted" />
-            <Link to="#">Open Government</Link>
-          </li>
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li>
-            <Link to="#">Information Quality Guidelines</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="o-footer-col">
-        <ul class="o-footer_list m-list">
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li>
-            <Link to="#">Administrative Adjudication</Link>
-          </li>
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li>
-            <Link to="#">Accessibility</Link>
-          </li>
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li>
-            <Link to="#">Office of Civil Rights</Link>
-          </li>
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li>
-            <Link to="#">No FEAR Act Data</Link>
-          </li>
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li>
-            <Link to="#">Tribal</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="o-footer-col right-col">
-        <ul className="o-footer-list m-list">
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li className="ext-link">
-            <Link to="#">
-              <div>USA.gov</div>
-            </Link>
-            <Link to="#">
-              <Icon type="external-link-icon" />
-            </Link>
-          </li>
-          <li className="divider">
-            <Divider color="dotted" />
-          </li>
-          <li className="ext-link">
-            <Link to="#">
-              <div>Office of Inspector General</div>
-            </Link>
-            <Link to="#" className="icon-link">
-              <Icon type="external-link-icon" />
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <ul className="top-ul">
+      <li>Contact Us</li>
+      <li>Newsroom</li>
+      <li>Careers</li>
+      <li>CFPB Ombudsman</li>
+    </ul>
+    <ul className="social-media-ul">
+      <li>
+        <Icon type="facebook-icon" />
+      </li>
+      <li>
+        <Icon type="twitter-icon" />
+      </li>
+      <li>
+        <Icon type="linkedin-icon" />
+      </li>
+      <li>
+        <Icon type="youtube-icon" />
+      </li>
+      <li>
+        <Icon type="flickr-icon" />
+      </li>
+    </ul>
+    <ul className="bottom-ul">
+      <li>Accessibility</li>
+      <li>FOIA</li>
+      <li>No FEAR Act</li>
+      <li>Open Government</li>
+      <li>Plain Writing</li>
+      <li>Privacy, Policy & Legal Notices</li>
+      <li className="ext-link">
+        <div>USA.gov</div>
+        <Link to="#" className="Nav_link">
+          <div>
+            <Icon type="external-link-icon" />
+          </div>
+        </Link>
+      </li>
+      <li className="ext-link">
+        <div>Office of Inspector General</div>
+        <Link to="#">
+          <Icon type="external-link-icon" />
+        </Link>
+      </li>
+    </ul>
     <div className="official-website">
       <div>
         <img src={usflag} alt="US Flag"></img>
