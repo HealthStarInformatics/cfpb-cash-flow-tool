@@ -1,13 +1,13 @@
 import React, { useContext, useState } from "react";
 import { Redirect } from "react-router-dom";
-import { AppContext } from "../App";
-import { dayString } from "../services/dateServices";
-import { filterByDate } from "../services/objectServices";
-import "../styles/Modal.scss";
-import Cash from "./Cash/Cash";
-import { CashAvailableToday } from "./Cash/CashAvailableToday";
-import { CloseModalButton } from "./CloseModalButton";
-import { Divider } from "./shared/Divider";
+import { AppContext } from "../../../App";
+import { dayString } from "../../../services/dateServices";
+import { filterByDate } from "../../../services/objectServices";
+import "../../../styles/Modal.scss";
+import Cash from "../../Cash/Cash";
+import { CashAvailableToday } from "../../Cash/CashAvailableToday";
+import { CloseModalButton } from "./../../shared/CloseModalButton";
+import { Divider } from "../../shared/Divider";
 
 export const DayModal = ({ closeModal, selectedDate }) => {
   const {

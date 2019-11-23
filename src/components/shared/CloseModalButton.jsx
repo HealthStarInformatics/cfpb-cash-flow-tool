@@ -1,5 +1,5 @@
 import React from "react";
-import closeIcon from "../assets/close-icon.png";
+import closeIcon from "../../assets/close-icon.png";
 
 export const CloseModalButton = ({ closeModal }) => (
   <div className="text-button close-modal" onClick={closeModal}>

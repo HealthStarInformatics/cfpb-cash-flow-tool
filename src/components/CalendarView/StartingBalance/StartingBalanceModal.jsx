@@ -1,12 +1,12 @@
 import React, { useState, useContext } from "react";
 
-import { AppContext } from "../../App";
-import "../../styles/Modal.scss";
+import { AppContext } from "../../../App";
+import "../../../styles/Modal.scss";
 
-import { CloseModalButton } from "../CloseModalButton";
-import { LabeledMoneyInput } from "../shared/LabeledMoneyInput";
+import { CloseModalButton } from "../../shared/CloseModalButton";
+import { LabeledMoneyInput } from "../../shared/LabeledMoneyInput";
 
-const StartingBalanceModal = ({ closeModal, setStartingBal }) => {
+export const StartingBalanceModal = ({ closeModal, setStartingBal }) => {
   const { monthlyData, selectedMonth, setState } = useContext(AppContext);
   const [checkingAmt, setCheckingAmt] = useState(
     monthlyData[selectedMonth.label].startingBalance.checking
@@ -91,5 +91,3 @@ const StartingBalanceModal = ({ closeModal, setStartingBal }) => {
     </div>
   );
 };
-
-export default StartingBalanceModal;

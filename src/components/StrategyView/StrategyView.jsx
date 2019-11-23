@@ -1,11 +1,11 @@
 import React from "react";
 import headerImage from "../../assets/strategies-header-img.png";
 import "../../styles/StrategyView.scss";
-import PrivacyNotice from "../shared/PrivacyNotice";
-import SectionTip from "../SectionTip";
+import { PrivacyNotice } from "../shared/HeadersFooters/PrivacyNotice";
+import { SectionTip } from "../shared/SectionTip";
 import { Divider } from "../shared/Divider";
-import SiteFooter from "../shared/SiteFooter";
-import { ViewHeader } from "../ViewHeader";
+import { SiteFooter } from "../shared/HeadersFooters/SiteFooter";
+import { ViewHeader } from "../shared/HeadersFooters/ViewHeader";
 import { StrategyCard } from "./StrategyCard";
 
 export const StrategyView = () => (

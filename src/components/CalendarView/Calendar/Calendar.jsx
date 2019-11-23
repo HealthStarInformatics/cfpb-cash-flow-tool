@@ -1,16 +1,19 @@
 import { isEmpty } from "lodash";
 import React, { useContext } from "react";
-import { AppContext } from "../../App";
-import { range } from "../../services/arrayServices";
-import { createWeekRows, getMonthInfo } from "../../services/calendarServices";
-import { totalAmount } from "../../services/currencyServices";
+import { AppContext } from "../../../App";
+import { range } from "../../../services/arrayServices";
+import {
+  createWeekRows,
+  getMonthInfo
+} from "../../../services/calendarServices";
+import { totalAmount } from "../../../services/currencyServices";
 import {
   convertToDateString,
   MAX_DAYS_IN_MONTH
-} from "../../services/dateServices";
-import { filterByDate } from "../../services/objectServices";
-import "../../styles/Calendar.scss";
-import { DayModal } from "../DayModal";
+} from "../../../services/dateServices";
+import { filterByDate } from "../../../services/objectServices";
+import "../../../styles/Calendar.scss";
+import { DayModal } from "./DayModal";
 import { CalendarBody } from "./CalendarBody";
 import { CalendarDay, CalendarDayPlaceholder } from "./CalendarDay";
 import { CalendarHeader } from "./CalendarHeader";

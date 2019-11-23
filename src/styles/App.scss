@@ -1,4 +1,4 @@
-@import "colors.scss";
+@import "colorsAndSizes.scss";
 
 * {
   box-sizing: border-box;
@@ -9,9 +9,21 @@
 body {
   margin: 0;
   font-size: 16px;
-  font-family: "Avenir Next", Arial, sans-serif;
+  font-family: "Avenir Next Regular", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 .cash-available {

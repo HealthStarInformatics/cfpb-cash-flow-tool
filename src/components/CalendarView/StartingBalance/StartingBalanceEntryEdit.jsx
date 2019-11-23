@@ -1,11 +1,11 @@
 import React from "react";
-import { formatCurrency, toCents } from "../../services/currencyServices";
+import { formatCurrency, toCents } from "../../../services/currencyServices";
 
-import Icon from "../shared/Icon";
+import { Icon } from "../../shared/Icon";
 
-import "../../styles/CurrentMonthViewHeader.scss";
+import "../../../styles/CurrentMonthHeader.scss";
 
-const StartingBalanceEntryEdit = ({
+export const StartingBalanceEntryEdit = ({
   startingBal,
   setStartingBal,
   startingBalanceTotal,
@@ -57,5 +57,3 @@ const StartingBalanceEntryEdit = ({
     </div>
   );
 };
-
-export default StartingBalanceEntryEdit;

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import "../../styles/CurrentMonthSummary.scss";
+import "../../../styles/CurrentMonthSummary.scss";
 
-import CurrentMonthSummaryChart from "./../CurrentMonthView/CurrentMonthSummaryChart";
-import ActionLink from "./../shared/ActionLink";
+import { CurrentMonthSummaryChart } from "../CurrentMonthSummary/CurrentMonthSummaryChart";
+import { ActionLink } from "../../shared/ActionLink";
 
 function CurrentMonthSummary() {
   const [chartvisible, setChartVisible] = useState(false);

@@ -1,10 +1,10 @@
 import React from "react";
 
-import Icon from "./Icon";
+import { Icon } from "./Icon";
 
 import "../../styles/ActionLink.scss";
 
-const ActionLink = ({ text, icon }) => {
+export const ActionLink = ({ text, icon }) => {
   return (
     <div className="action-link">
       <div className="underline">{text}</div>
@@ -14,5 +14,3 @@ const ActionLink = ({ text, icon }) => {
     </div>
   );
 };
-
-export default ActionLink;

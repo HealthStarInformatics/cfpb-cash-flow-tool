@@ -1,23 +1,22 @@
 import React from "react";
 import { NavLink as Link } from "react-router-dom";
 
-import Icon from "./Icon";
+import { Icon } from "../../shared/Icon";
 
-import "../../styles/PrivacyNotice.scss";
+import "../../../styles/PrivacyNotice.scss";
 
-const PrivacyNotice = () => (
+export const PrivacyNotice = () => (
   <div className="privacy-notice-wrapper">
     <div className="save-work-info">
       <div>
         <div>
           <Icon type="exclamation-point" />
         </div>
-        <div>How to save your work</div>
+        <div>Saving your work</div>
       </div>
       <p>
-        This tool uses cookies to <strong>temporarily</strong> save your work.
-        You need to use the same device and browser to see work you've already
-        completed.{" "}
+        As long as you are using this device and browser, your work is saved for
+        use next time.
         <Link to="#" className="Nav_link">
           Learn how to save a permanent copy of your work.
         </Link>
@@ -34,5 +33,3 @@ const PrivacyNotice = () => (
     </div>
   </div>
 );
-
-export default PrivacyNotice;

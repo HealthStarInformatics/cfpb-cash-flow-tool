@@ -3,19 +3,18 @@ import React, { useContext } from "react";
 import {
   formatCurrency,
   findPercentage
-} from "../../services/currencyServices";
+} from "../../../services/currencyServices";
 
 import {
   savingsTotal,
-  expenseTotal,
-  monthGrandTotal
-} from "../../services/cashFlowServices.js";
-import { AppContext } from "../../App";
-import ProgressBar from "../shared/ProgressBar";
+  expenseTotal
+} from "../../../services/cashFlowServices.js";
+import { AppContext } from "../../../App";
+import { ProgressBar } from "../../shared/ProgressBar";
 
-import "../../styles/CurrentMonthSummaryChart.scss";
+import "../../../styles/CurrentMonthSummaryChart.scss";
 
-const CurrentMonthSummaryChart = () => {
+export const CurrentMonthSummaryChart = () => {
   const { monthlyData, selectedMonth } = useContext(AppContext);
 
   const incomeTotal = Object.keys(monthlyData[selectedMonth.label].incomes)
@@ -70,5 +69,3 @@ const CurrentMonthSummaryChart = () => {
     </div>
   );
 };
-
-export default CurrentMonthSummaryChart;
