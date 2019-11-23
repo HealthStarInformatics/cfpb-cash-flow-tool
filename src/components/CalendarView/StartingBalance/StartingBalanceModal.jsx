@@ -3,8 +3,8 @@ import React, { useState, useContext } from "react";
 import { AppContext } from "../../../App";
 import "../../../styles/Modal.scss";
 
-import { CloseModalButton } from "../CloseModalButton";
-import { LabeledMoneyInput } from "../shared/LabeledMoneyInput";
+import { CloseModalButton } from "../../shared/CloseModalButton";
+import { LabeledMoneyInput } from "../../shared/LabeledMoneyInput";
 
 export const StartingBalanceModal = ({ closeModal, setStartingBal }) => {
   const { monthlyData, selectedMonth, setState } = useContext(AppContext);
