@@ -9,6 +9,7 @@ import { SiteFooter } from "../shared/HeadersFooters/SiteFooter";
 
 import "../../styles/LandingView.scss";
 
+// Landing View
 export const LandingView = () => (
   <section className="landing">
     <SiteNavBar />
