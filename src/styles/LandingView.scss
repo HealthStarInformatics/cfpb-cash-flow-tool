@@ -1,4 +1,4 @@
-#landing {
+.landing {
   margin: 0 auto;
 }
 
@@ -9,4 +9,11 @@
   border-radius: 5px;
   width: 100%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 601px) {
+  .wrapper-content-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
 }
