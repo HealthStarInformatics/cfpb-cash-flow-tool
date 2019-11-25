@@ -1,0 +1,27 @@
+@import "colorsAndSizes.scss";
+
+.content-side-bar-wrapper {
+  padding: 10px 20px;
+}
+
+.block {
+  margin-top: 3.75em;
+  margin-bottom: 3.75em;
+}
+
+.m-slug-header {
+  border-top: 1px solid #b4b5b6;
+}
+
+.a-heading {
+  margin-bottom: 1.07142857em;
+  font-size: 0.875em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-top: 0.28571429em;
+  border-top: 5px solid #20aa3f;
+  margin-top: -3px;
+}

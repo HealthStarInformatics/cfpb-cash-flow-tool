@@ -7,4 +7,7 @@
   &.dark {
     border-bottom: 1px solid $grey60;
   }
+  &.dotted {
+    border-bottom: 1px dotted $grey60;
+  }
 }
