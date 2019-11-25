@@ -4,15 +4,19 @@ import { SiteNavBar } from "../shared/HeadersFooters/SiteNavBar";
 import { LandingViewHero } from "./LandingViewHero";
 import { GetStarted } from "./GetStarted";
 import { PrivacyNotice } from "../shared/HeadersFooters/PrivacyNotice";
+import { ContentSideBar } from "../shared/HeadersFooters/ContentSideBar";
 import { SiteFooter } from "../shared/HeadersFooters/SiteFooter";
 
 import "../../styles/LandingView.scss";
 
 export const LandingView = () => (
-  <section id="landing">
+  <section className="landing">
     <SiteNavBar />
     <LandingViewHero />
-    <GetStarted />
+    <div className="wrapper-content-wrapper">
+      <GetStarted />
+      <ContentSideBar />
+    </div>
     <PrivacyNotice />
     <SiteFooter />
   </section>
