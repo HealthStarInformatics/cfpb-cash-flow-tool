@@ -19,16 +19,12 @@ export const ContentSideBar = () => (
     </div>
     <div className="block">
       <header className="m-slug-header">
-        <h2 className="a-heading">ABOUT THIS QUESTIONNAIRE</h2>
+        <h2 className="a-heading">STILL HAVE A QUESTION?</h2>
       </header>
 
-      <p>
-        CFPB researchers developed the questionnaire and a way to score it, as a
-        tool to help measure your current financial well - being—that is, how
-        well your current money situation is providing you with financial
-        security and freedom of choice, today and for the future.
-      </p>
-      <p>See more background</p>
+      <p>Call us if you still can't find what you're looking for.</p>
+      <p>(855) 411-2372)</p>
+      <p>TTY/TDD: (855) 729-2372</p>
     </div>
     <div className="block">
       <header className="m-slug-header">
