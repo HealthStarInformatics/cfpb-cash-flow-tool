@@ -9,6 +9,7 @@
 body {
   margin: 0;
   font-size: 16px;
+  color: #101820;
   font-family: "Avenir Next Regular", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,6 +27,21 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  border-width: 0;
+  border-bottom: 1px;
+  border-style: dotted;
+  border-color: #0072ce;
+  color: #0072ce;
+}
+
+a:visited,
+a.visited {
+  border-color: #257675;
+  color: #257675;
 }
 
 .cash-available {

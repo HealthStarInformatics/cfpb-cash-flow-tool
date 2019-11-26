@@ -17,6 +17,8 @@ export const PrivacyNotice = () => (
       <p>
         As long as you are using this device and browser, your work is saved for
         use next time.
+      </p>
+      <p>
         <Link to="#" className="Nav_link">
           Learn how to save a permanent copy of your work.
         </Link>

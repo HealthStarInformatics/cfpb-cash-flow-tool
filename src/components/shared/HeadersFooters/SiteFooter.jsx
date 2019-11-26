@@ -4,8 +4,6 @@ import { NavLink as Link } from "react-router-dom";
 import { Icon } from "../../shared/Icon";
 import { Divider } from "../Divider";
 
-import usflag from "../../../assets/us-flag.png";
-
 import "../../../styles/SiteFooter.scss";
 
 export const SiteFooter = () => (
