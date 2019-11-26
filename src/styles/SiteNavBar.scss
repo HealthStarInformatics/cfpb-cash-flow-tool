@@ -1,14 +1,24 @@
 @import "colorsAndSizes.scss";
 
 .sitenavbar-wrapper {
-  height: 60px;
+  height: 100%;
+
   width: 100vw;
   border-bottom: 4px solid $green;
 
   .component-body {
     display: flex;
+    height: 60px;
+    width: 100%;
+  }
+
+  .mobile {
+    display: flex;
     justify-content: space-between;
-    height: 100%;
+  }
+
+  .desktop {
+    display: none;
   }
   .image-container-menu {
     flex-basis: 20%;
@@ -44,7 +54,76 @@
 
   @media screen and (min-width: 901px) {
     .component-body {
+      // width: 100%;
       max-width: 1200px;
+      height: 140px;
+    }
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: flex;
+      flex-direction: column;
+
+      .desktop_top-row {
+        display: flex;
+        justify-content: space-between;
+        height: 70%;
+        width: 100%;
+        // border: 1px solid;
+      }
+      .header-left {
+        // border: 1px solid;
+
+        width: 30%;
+      }
+
+      .header-right {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        // border: 1px solid;
+        padding-right: 20px;
+      }
+
+      .image-container-search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 15px;
+
+        .search-icon {
+          height: 50px;
+        }
+        .search-text {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+          height: 50px;
+          padding-right: 10px;
+          border-right: 1px solid $grey80;
+        }
+      }
+
+      .desktop_bottom-row {
+        display: flex;
+        height: 30%;
+        width: 100%;
+        max-width: 1200px;
+        // border: 1px solid;
+        .menu-items {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          height: 100%;
+          width: 100vw;
+          // border: 1px solid red;
+        }
+      }
     }
   }
   // }
