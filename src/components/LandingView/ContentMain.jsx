@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import LinkButton from "../shared/LinkButton";
 import img1 from "../../assets/featured-content-img.png";
 import "../../styles/ContentMain.scss";
 
