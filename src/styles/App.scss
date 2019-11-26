@@ -101,3 +101,57 @@ ul {
 .capitalize {
   text-transform: capitalize;
 }
+
+.hero_heading-wrapper {
+  width: 100%;
+}
+.hero-heading {
+  margin-bottom: 0.44117647em;
+  font-size: 2.125em;
+  font-weight: normal;
+  letter-spacing: initial;
+  line-height: 1.25;
+  text-transform: initial;
+}
+
+.hero_subhead {
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.hero_image-wrapper {
+  width: 100%;
+  align-self: center;
+
+  .hero-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: 300;
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .hero_heading-wrapper {
+    width: 60%;
+  }
+
+  .hero_image-wrapper {
+    width: 39%;
+    position: relative;
+  }
+}

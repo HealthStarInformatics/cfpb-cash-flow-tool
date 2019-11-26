@@ -1,0 +1,61 @@
+@import "colorsAndSizes.scss";
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.global-eyebrow-wrapper {
+  background: #f7f8f9;
+  border-bottom: 1px solid #b4b5b6;
+  width: 100%;
+  padding: 4px;
+}
+
+.a-tagline {
+  font-size: 0.9em;
+}
+
+.m-list_item {
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.phone {
+  padding-left: 1em;
+}
+
+.eyebrow-list {
+  display: flex;
+  flex-direction: row;
+}
+.global-eyebrow_actions {
+  display: flex;
+  flex-direction: row;
+}
+.eyebrow-item {
+  font-size: 0.9em;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: $pacific;
+  border-bottom: none;
+}
+
+@media screen and (min-width: 601px) {
+  .component-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .white-space {
+    flex-grow: 1;
+  }
+}

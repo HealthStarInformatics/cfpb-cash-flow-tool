@@ -1,9 +1,9 @@
 import React from "react";
 
 import LinkButton from "../shared/LinkButton";
-import "../../styles/GetStarted.scss";
+import "../../styles/ContentMain.scss";
 
-export const GetStarted = () => {
+export const ContentMain = () => {
   return (
     <div className="getstarted-wrapper">
       <LinkButton className="get-started-button" to="/month">

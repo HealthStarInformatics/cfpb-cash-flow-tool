@@ -174,11 +174,5 @@ export const SiteFooter = () => (
         </ul>
       </div>
     </div>
-    <div className="official-website">
-      <div>
-        <img src={usflag} alt="US Flag"></img>
-      </div>
-      <div>An Official Website of the United States Government</div>
-    </div>
   </div>
 );

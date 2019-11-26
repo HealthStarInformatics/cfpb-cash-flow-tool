@@ -1,10 +1,10 @@
 import React from "react";
 
+import { GlobalEyebrow } from "../shared/HeadersFooters/GlobalEyebrow";
 import { SiteNavBar } from "../shared/HeadersFooters/SiteNavBar";
 import { LandingViewHero } from "./LandingViewHero";
-import { GetStarted } from "./GetStarted";
+import { ContentWrapper } from "./ContentWrapper";
 import { PrivacyNotice } from "../shared/HeadersFooters/PrivacyNotice";
-import { ContentSideBar } from "../shared/HeadersFooters/ContentSideBar";
 import { SiteFooter } from "../shared/HeadersFooters/SiteFooter";
 
 import "../../styles/LandingView.scss";
@@ -12,13 +12,17 @@ import "../../styles/LandingView.scss";
 // Landing View
 export const LandingView = () => (
   <section className="landing">
+    <div className="desktop-view">
+      <GlobalEyebrow view="desktop" />
+    </div>
+
     <SiteNavBar />
     <LandingViewHero />
-    <div className="wrapper-content-wrapper">
-      <GetStarted />
-      <ContentSideBar />
-    </div>
+    <ContentWrapper />
     <PrivacyNotice />
     <SiteFooter />
+    <div className="mobile-view">
+      <GlobalEyebrow view="mobile" />
+    </div>
   </section>
 );

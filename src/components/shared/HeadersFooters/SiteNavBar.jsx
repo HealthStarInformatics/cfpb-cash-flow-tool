@@ -8,26 +8,28 @@ import "../../../styles/SiteNavBar.scss";
 
 export const SiteNavBar = () => (
   <div className="sitenavbar-wrapper">
-    <div className="image image-container-menu">
-      <img
-        className="image menu-icon"
-        src={menu}
-        alt="hamburger menu icon"
-      ></img>
-    </div>
-    <div className="image image-container-logo">
-      <img
-        className="image cf-logo-small"
-        src={logo}
-        alt="CFPB small logo"
-      ></img>
-    </div>
-    <div className="image lph-image-container-search">
-      <img
-        className="image search-icon"
-        src={search}
-        alt="search magnifying glass"
-      ></img>
+    <div className="component-body">
+      <div className="image image-container-menu">
+        <img
+          className="image menu-icon"
+          src={menu}
+          alt="hamburger menu icon"
+        ></img>
+      </div>
+      <div className="image image-container-logo">
+        <img
+          className="image cf-logo-small"
+          src={logo}
+          alt="CFPB small logo"
+        ></img>
+      </div>
+      <div className="image image-container-search">
+        <img
+          className="image search-icon"
+          src={search}
+          alt="search magnifying glass"
+        ></img>
+      </div>
     </div>
   </div>
 );

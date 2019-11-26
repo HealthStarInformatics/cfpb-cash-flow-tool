@@ -11,9 +11,34 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 601px) {
+.desktop-view {
+  display: none;
+  width: 100%;
+}
+.mobile-view {
+  display: inline-block;
+  width: 100%;
+}
+
+.language-list {
+  display: none;
+}
+
+@media screen and (min-width: 901px) {
   .wrapper-content-wrapper {
     display: flex;
     flex-direction: row;
+  }
+
+  .desktop-view {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .mobile-view {
+    display: none;
+  }
+
+  .language-list {
+    display: inline-block;
   }
 }

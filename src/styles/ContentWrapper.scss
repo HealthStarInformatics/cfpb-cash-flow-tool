@@ -1,0 +1,49 @@
+@import "colorsAndSizes.scss";
+
+.content-wrapper {
+  background-color: white;
+  width: 100vw;
+  border-bottom: 4px solid $green;
+
+  .body-component {
+    display: flex;
+    flex-direction: column;
+
+    .content-main {
+      border-width: 0 15px;
+      margin-right: -0.25em;
+      vertical-align: top;
+    }
+
+    .content-sidebar {
+      background-color: #f7f8f9;
+      padding-top: 2.8125em;
+      padding-right: 0;
+      padding-bottom: 0.9375em;
+      padding-left: 1.875em;
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 601px) {
+}
+
+@media screen and (min-width: 901px) {
+  .content-wrapper {
+    .body-component {
+      display: flex;
+      margin: 0 auto;
+      flex-direction: row;
+      max-width: 1200px;
+    }
+    .content-main {
+      width: 66.66%;
+    }
+
+    .content-sidebar {
+      width: 33.33%;
+      border-left: 1px solid #101820;
+    }
+  }
+}

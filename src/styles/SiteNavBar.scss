@@ -1,15 +1,16 @@
 @import "colorsAndSizes.scss";
 
 .sitenavbar-wrapper {
-  display: flex;
-  justify-content: space-between;
   height: 60px;
   width: 100vw;
   border-bottom: 4px solid $green;
 
-  .image {
+  .component-body {
+    display: flex;
+    justify-content: space-between;
     height: 100%;
   }
+
   .image-container-menu {
     flex-basis: 20%;
     border-right: 1px solid gray;
@@ -21,12 +22,12 @@
   }
 
   .image-container-logo {
-    padding-right: 20px;
     flex-basis: 70%;
+    padding-right: 20px;
 
     .cf-logo-small {
-      padding: 7px;
       height: 100%;
+      padding: 7px;
     }
   }
 
@@ -34,8 +35,17 @@
     flex-basis: 10%;
 
     .search-icon {
-      padding: 10px;
       height: 100%;
+      padding: 10px;
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+  }
+
+  @media screen and (min-width: 901px) {
+    .component-body {
+      max-width: 1200px;
     }
   }
 }
