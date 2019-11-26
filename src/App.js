@@ -6,6 +6,7 @@ import { LandingView } from "./components/LandingView/LandingView";
 import { MonthSelectView } from "./components/MonthSelectView/MonthSelectView";
 import { StrategyView } from "./components/StrategyView/StrategyView";
 // import { exampleMonthlyData } from "./mockData";
+
 import "./styles/App.scss";
 import { getFromStorage, saveToStorage } from "../src/services/storageServices";
 

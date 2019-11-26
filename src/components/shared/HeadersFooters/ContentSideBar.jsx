@@ -1,8 +1,5 @@
 import React from "react";
-import { NavLink as Link } from "react-router-dom";
-
-import { Icon } from "../../shared/Icon";
-import { Divider } from "../Divider";
+import { Link } from "react-router-dom";
 
 import "../../../styles/ContentSideBar.scss";
 
@@ -15,7 +12,7 @@ export const ContentSideBar = () => (
         agency that makes sure banks, lenders, and other financial companies
         treat you fairly.
       </p>
-      <p>Learn how the CFPB can help you</p>
+      <Link to="/about-us/the-bureau/">Learn how the CFPB can help you</Link>
     </div>
     <div className="block">
       <header className="m-slug-header">
@@ -28,37 +25,34 @@ export const ContentSideBar = () => (
     </div>
     <div className="block">
       <header className="m-slug-header">
-        <h2 className="a-heading">LATEST BLOG POSTS</h2>
+        <h2 className="a-heading">HOW THE CFPB IS PROTECTING YOU</h2>
       </header>
 
-      <div>
-        <p>We’re working to better serve people through financial coaching</p>
-        <p>AUG 17, 2017</p>
-      </div>
-
-      <div>
-        <p>
-          Effective financial education: Five principles and how to use them
-        </p>
-        <p>JUN 14, 2017</p>
-      </div>
-
-      <div></div>
-      <h2>Four elements define personal financial well - being</h2>
-      <p>JAN 27, 2015</p>
+      <Link to="/about-us/blog/easy-remember/guidelines/help-people-reduce-credit-card-debt/">
+        Easy-to-remember guidelines help people reduce credit card debt
+      </Link>
     </div>
     <div className="block">
       <header className="m-slug-header">
-        <h2 className="a-heading">LEGAL DISCLAIMER</h2>
+        <h2 className="a-heading">PRINT RESOURCES</h2>
       </header>
-      <p>
-        The content on this page provides general consumer information.It is not
-        legal advice or regulatory guidance.The CFPB updates this information
-        periodically.This information may include links or references to third -
-        party resources or content.We do not endorse the third - party or
-        guarantee the accuracy of this third - party information.There may be
-        other resources that also serve your needs.
-      </p>
+      <ul>
+        <li>
+          <Link to="/about-us/blog/easy-remember/guidelines/help-people-reduce-credit-card-debt/">
+            My credit spending rules to live by
+          </Link>
+        </li>
+        <li>
+          <Link to="/about-us/blog/easy-remember/guidelines/help-people-reduce-credit-card-debt/">
+            How to find the best credit card
+          </Link>
+        </li>
+        <li>
+          <Link to="/about-us/blog/easy-remember/guidelines/help-people-reduce-credit-card-debt/">
+            How to find mistabkes in your credit card bill
+          </Link>
+        </li>
+      </ul>
     </div>
   </div>
 );
