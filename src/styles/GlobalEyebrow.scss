@@ -39,14 +39,7 @@ ul {
   font-size: 0.9em;
 }
 
-a:link,
-a:visited {
-  text-decoration: none;
-  color: $pacific;
-  border-bottom: none;
-}
-
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 901px) {
   .component-body {
     display: flex;
     flex-direction: row;
