@@ -15,6 +15,8 @@ import { ReactComponent as YouTubeIcon } from "../../assets/youtube-square.svg";
 import { ReactComponent as ExternalLinkIcon } from "../..//assets/external-link.svg";
 import { ReactComponent as UpArrowIcon } from "../../assets/up-arrow.svg";
 import { ReactComponent as SaveIcon } from "../../assets/disk.svg";
+import { ReactComponent as SearchIcon } from "../../assets/noun_Magnifying Glass_89626.png";
+import { ReactComponent as ComplaintIcon } from "../../assets/complaint.svg";
 
 import "../../styles/Icon.scss";
 
@@ -53,6 +55,10 @@ export const Icon = ({ type }) => {
             return <ExternalLinkIcon className="external-link-icon" />;
           case "save-icon":
             return <SaveIcon className="save-icon" />;
+          case "search-icon":
+            return <SearchIcon className="search-icon" />;
+          case "complaint-icon":
+            return <ComplaintIcon className="complaint-icon" />;
           default:
             return <div>There is an error on the Icon component</div>;
         }

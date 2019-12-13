@@ -44,6 +44,32 @@ a.visited {
   color: #257675;
 }
 
+.a-text-input {
+  display: inline-block;
+  padding: 0.4375em;
+  border: 1px solid #919395;
+  background: #fff;
+  color: #101820;
+}
+
+.a-btn {
+  display: inline-block;
+  padding: 0.5em 0.875em;
+  border: 0;
+  margin: 0;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+  background-color: #0072ce;
+  color: #fff;
+}
+
 .cash-available {
   font-size: 1.4rem;
   font-weight: 500;
