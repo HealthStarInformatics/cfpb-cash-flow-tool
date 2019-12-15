@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/CalendarView.scss";
+import "../../css/CalendarView.css";
 import Calendar from "./Calendar/Calendar";
 import CashAvailableMonth from "./CurrentMonthSummary/CashAvailableMonth";
 import CurrentMonthSummary from "./CurrentMonthSummary/CurrentMonthSummary";

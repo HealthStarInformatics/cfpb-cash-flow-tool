@@ -1,0 +1,15 @@
+.current-month-summary-chart li {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  margin-bottom: 8px;
+}
+.current-month-summary-chart .title {
+  text-align: left;
+  width: 30%;
+  font-weight: 500;
+}
+.total-value {
+  padding-left: 10px;
+}
+/*# sourceMappingURL=CurrentMonthSummaryChart.css.map */

@@ -1,0 +1,19 @@
+.getstarted-wrapper {
+  height: auto;
+  width: 100%;
+  padding: 25px;
+}
+.get-started-button {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  padding: 15px;
+  background: blue;
+  text-align: center;
+}
+/*# sourceMappingURL=GetStarted.css.map */

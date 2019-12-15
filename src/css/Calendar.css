@@ -1,0 +1,109 @@
+.calendar {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.calendar .row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+.calendar .day {
+  cursor: pointer;
+  border: 1px solid darkblue;
+  min-height: 80px;
+  margin: 2px;
+  width: 14%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.calendar .day .number {
+  line-height: 1rem;
+  padding-bottom: 0;
+}
+.calendar .day .symbol svg {
+  width: 25px;
+  height: 25px;
+  margin-top: 3px;
+  fill: white;
+}
+.calendar .day .dots {
+  color: white;
+  font-size: 0.3rem;
+  letter-spacing: 1px;
+}
+.calendar .day.placeholder {
+  border: 0;
+  cursor: default;
+}
+.calendar .day.label {
+  border: 0;
+  min-height: 0;
+  padding: 20px 0 10px 0;
+  font-weight: bold;
+  cursor: default;
+}
+.calendar .day.hasCash {
+  background: green;
+  border-color: green;
+}
+.calendar .day.hasCash .symbol svg {
+  width: 25px;
+  height: 25px;
+  fill: green;
+}
+.calendar .day.hasCash .dots {
+  color: green;
+}
+.calendar .day.noCash {
+  background: purple;
+  border-color: purple;
+}
+.calendar .day.noCash .symbol svg {
+  width: 25px;
+  height: 25px;
+  fill: purple;
+}
+.calendar .day.noCash .dots {
+  color: purple;
+}
+.calendar .day.hasEntries .number {
+  font-weight: bold;
+}
+.calendar .day.hasEntries .dots {
+  color: black;
+}
+.calendar-key {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-end;
+  padding: 20px 0;
+  font-size: 1.2rem;
+}
+.calendar-key .item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;
+  padding: 5px;
+}
+.calendar-key .item svg {
+  height: 25px;
+  width: 25px;
+}
+.calendar-key .item svg,
+.calendar-key .item .dots {
+  padding-right: 10px;
+  font-size: 0.5rem;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+.calendar-key .item.cash svg {
+  fill: green;
+}
+.calendar-key .item.nocash svg {
+  fill: purple;
+}
+/*# sourceMappingURL=Calendar.css.map */

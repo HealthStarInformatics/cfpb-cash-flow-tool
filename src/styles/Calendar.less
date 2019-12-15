@@ -1,5 +1,3 @@
-@import "colorsAndSizes.less";
-
 .calendar {
   text-align: center;
   font-size: 1.2rem;
@@ -12,7 +10,7 @@
 
   .day {
     cursor: pointer;
-    border: 1px solid $navy80;
+    border: 1px solid darkblue;
     min-height: 80px;
     margin: 2px;
     width: 14%;
@@ -53,32 +51,32 @@
     }
 
     &.hasCash {
-      background: $green20;
-      border-color: $green;
+      background: green;
+      border-color: green;
 
       .symbol svg {
         width: 25px;
         height: 25px;
-        fill: $green;
+        fill: green;
       }
 
       .dots {
-        color: $green20;
+        color: green;
       }
     }
 
     &.noCash {
-      background: $purple20;
-      border-color: $purple;
+      background: purple;
+      border-color: purple;
 
       .symbol svg {
         width: 25px;
         height: 25px;
-        fill: $purple;
+        fill: purple;
       }
 
       .dots {
-        color: $purple20;
+        color: purple;
       }
     }
 
@@ -122,11 +120,11 @@
     }
 
     &.cash svg {
-      fill: $green;
+      fill: green;
     }
 
     &.nocash svg {
-      fill: $purple;
+      fill: purple;
     }
   }
 }

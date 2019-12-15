@@ -1,0 +1,49 @@
+.search-mobile {
+  height: 100%;
+}
+.search-tablet {
+  display: none;
+}
+.search-desktop {
+  display: none;
+}
+.search-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.search-icon-text {
+  display: none;
+}
+.search-icon-wrapper {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.search-icon-wrapper .search-icon {
+  height: 100%;
+  padding: 8px;
+  width: 50px;
+}
+.search-icon-text {
+  display: none;
+}
+.submit-complaint-wrapper {
+  display: none;
+}
+@media screen and (min-width: 601px) {
+  .search-icon-text {
+    display: block;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 601px) and screen and (min-width: 901px) {
+  .submit-complaint-wrapper {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid #919395;
+  }
+}
+/*# sourceMappingURL=Search.css.map */

@@ -10,7 +10,7 @@ import { SearchModal } from "./SearchModal";
 import { Icon } from "../Icon";
 import { Search } from "./Search";
 
-import "../../../styles/SiteNavBar.scss";
+// import "../../../styles/SiteNavBar.scss";
 
 export const SiteNavBar = () => {
   const [searchModalVisible, setSearchModalVisible] = useState(true);

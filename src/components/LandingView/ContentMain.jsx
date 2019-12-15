@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import img1 from "../../assets/featured-content-img.png";
-import "../../styles/ContentMain.scss";
+import "../../css/ContentMain.css";
 
 export const ContentMain = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import headerImage from "../../assets/strategies-header-img.png";
-import "../../styles/StrategyView.scss";
+// import "../../styles/StrategyView.scss";
 import { PrivacyNotice } from "../shared/HeadersFooters/PrivacyNotice";
 import { SectionTip } from "../shared/SectionTip";
 import { Divider } from "../shared/Divider";

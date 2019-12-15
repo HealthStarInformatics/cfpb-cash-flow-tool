@@ -1,0 +1,106 @@
+.modal {
+  border-top: 5px solid green;
+  background: white;
+}
+.modal .section {
+  padding: 20px;
+}
+.modal .header {
+  font-weight: 500;
+}
+.modal .header .large-title {
+  font-size: 1.5rem;
+}
+.modal .header .title {
+  font-size: 1.1rem;
+}
+.modal .header .date {
+  padding-top: 15px;
+  font-size: 1.5rem;
+  color: gray80;
+}
+.modal .description {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.modal .text-button {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+  cursor: pointer;
+  color: blue;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.modal .text-button.add-cash {
+  margin-top: 30px;
+}
+.modal .text-button span {
+  border-bottom: 1px solid blue;
+  line-height: 25px;
+}
+.modal .text-button img {
+  margin-left: 5px;
+  height: 25px;
+  width: 25px;
+}
+.modal .modal-input {
+  margin-top: 20px;
+  padding-bottom: 5px;
+  font-size: 1.2rem;
+}
+.modal .modal-input input {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 10px;
+  border: 1px solid gray80;
+}
+.modal .modal-input label {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.modal .modal-input .description {
+  margin: 5px auto 10px auto;
+  color: #595d62;
+  font-weight: 300;
+}
+.modal .starting-balance-modal-button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.modal .form-actions button {
+  margin: 10px 0;
+}
+.modal .actions.section {
+  padding: 20px 10px;
+}
+.button-list {
+  display: flex;
+  flex-direction: column;
+}
+.modal-wrapper {
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  animation-name: slideup;
+  animation-duration: 0.3s;
+}
+@keyframes slideup {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+/*# sourceMappingURL=Modal.css.map */

@@ -3,7 +3,7 @@ import { NavLink as Link } from "react-router-dom";
 
 import usflag from "../../../assets/us-flag.png";
 
-import "../../../styles/GlobalEyebrow.scss";
+// import "../../../styles/GlobalEyebrow.scss";
 
 export const GlobalEyebrow = () => (
   <div className="global-eyebrow-wrapper">

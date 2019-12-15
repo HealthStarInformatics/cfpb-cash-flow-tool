@@ -7,7 +7,7 @@ import { MonthSelectView } from "./components/MonthSelectView/MonthSelectView";
 import { StrategyView } from "./components/StrategyView/StrategyView";
 // import { exampleMonthlyData } from "./mockData";
 
-import "./styles/App.scss";
+import "./css/App.css";
 import { getFromStorage, saveToStorage } from "../src/services/storageServices";
 
 export const AppContext = React.createContext();

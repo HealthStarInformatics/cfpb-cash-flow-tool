@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import search from "../../../assets/noun_Magnifying Glass_89626.png";
 import { Icon } from "../Icon";
 
-import "../../../styles/Search.scss";
+// import "../../../styles/Search.scss";
 
 export const Search = () => (
   <>

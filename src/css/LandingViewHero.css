@@ -1,0 +1,24 @@
+.landing-view-hero-wrapper {
+  display: flex;
+  background-color: blue;
+  padding: 25px 13px 60px;
+}
+.landing-view-hero-wrapper .component-body {
+  display: flex;
+  flex-direction: column;
+}
+.get-started-btn {
+  background-color: blue;
+  padding: 13px 0px;
+}
+@media screen and (min-width: 601px) {
+  .landing-view-hero-wrapper {
+    display: flex;
+  }
+  .landing-view-hero-wrapper .component-body {
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+/*# sourceMappingURL=LandingViewHero.css.map */

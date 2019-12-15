@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { cashConfig } from "../../config/cashConfig";
-import "../../styles/Cash.scss";
+import "../../css/Cash.css";
 import { CashEdit } from "./CashEdit";
 import { CashHeader } from "./CashHeader";
 import { CashList } from "./CashList";

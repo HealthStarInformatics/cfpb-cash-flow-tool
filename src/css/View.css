@@ -1,0 +1,32 @@
+.view {
+  width: 100%;
+  padding: 20px;
+}
+.view .header {
+  display: flex;
+  flex-direction: column;
+}
+.view .header img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.view .header .title {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.view .header .description {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 0;
+}
+.view .actions {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+.view .actions button {
+  width: 100%;
+}
+/*# sourceMappingURL=View.css.map */

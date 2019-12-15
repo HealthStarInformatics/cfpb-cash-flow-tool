@@ -1,0 +1,83 @@
+.review-cash-flow-strategies-btn {
+  margin: 25px;
+  background-color: green;
+}
+.calendar-header-wrapper {
+  padding: 25px;
+}
+.calendar-header-wrapper .description {
+  margin: 5px auto 10px auto;
+  color: #595d62;
+  font-weight: 300;
+}
+.calendar-header-wrapper .img-wrapper {
+  text-align: center;
+}
+.calendar-header-wrapper .img-wrapper img {
+  height: 200px;
+}
+.calendar-month-view-wrapper {
+  margin-left: 25px;
+  margin-right: 25px;
+  border: 1px solid darkblue;
+}
+.calendar-month-view-wrapper .body {
+  padding: 18px;
+}
+.header-banner {
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  background-color: darkblue;
+}
+.header-banner div {
+  color: white;
+  align-self: center;
+}
+.calendar-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  background-color: #ffe1b9;
+}
+.calendar-wrapper div {
+  align-self: center;
+}
+.review-btn {
+  padding: 20px 25px;
+}
+.section-tip-wrapper {
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.section-tip-wrapper .text {
+  line-height: 1.6rem;
+}
+.section-tip-wrapper .text p {
+  font-weight: 450;
+}
+.cash-available-month-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 18px;
+  background-color: darkblue;
+  border-top: 1px solid darkblue;
+}
+.cash-available-month-wrapper .dollar-sign-icon {
+  height: 20px;
+  width: 20px;
+  fill: #43484e;
+}
+.total-available-cash-value-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.total-available-cash-value-wrapper div svg {
+  height: 100%;
+}
+.total-available-cash-value-wrapper .total-value {
+  padding-left: 5px;
+}
+/*# sourceMappingURL=CalendarView.css.map */

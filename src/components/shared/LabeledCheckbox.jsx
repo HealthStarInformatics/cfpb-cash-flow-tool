@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/LabeledCheckbox.scss";
+// import "../../styles/LabeledCheckbox.scss";
 import { joinClasses } from "../../services/stringServices";
 
 export const LabeledCheckbox = ({

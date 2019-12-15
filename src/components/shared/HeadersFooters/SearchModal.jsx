@@ -4,7 +4,7 @@ import React from "react";
 import search from "../../../assets/noun_Magnifying Glass_89626.png";
 // import { Icon } from "../Icon";
 
-import "../../../styles/SearchModal.scss";
+// import "../../../styles/SearchModal.scss";
 
 export const SearchModal = closeModal => (
   <>

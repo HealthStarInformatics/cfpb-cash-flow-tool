@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link, Redirect } from "react-router-dom";
 import { AppContext } from "../../App";
-import "../../styles/CalendarView.scss";
+import "../../css/CalendarView.css";
 import { CalendarHeader } from "./CalendarHeader";
 import { CalendarMonthView } from "./CalendarMonthView";
 import { PrivacyNotice } from "./../shared/HeadersFooters/PrivacyNotice";

@@ -1,0 +1,59 @@
+.cash-section {
+  padding: 20px;
+}
+.cash-list {
+  margin-top: 20px;
+}
+.cash-list.empty {
+  margin-top: 5px;
+}
+.cash-list.empty .empty-state {
+  font-size: 1.2rem;
+  color: gray80;
+  margin: 5px auto;
+}
+.cash-list .entry {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
+.cash-list .entry .row {
+  display: flex;
+  justify-content: space-between;
+}
+.cash-list .entry .name,
+.cash-list .entry .amount {
+  margin: 2px 0;
+  font-weight: 500;
+}
+.cash-edit {
+  padding-bottom: 50px;
+}
+.cash-edit .type {
+  display: flex;
+  flex-direction: column;
+}
+.cash-edit .form-actions {
+  display: flex;
+  flex-direction: column;
+}
+.cash-header,
+.cash-title {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.cash-header span,
+.cash-title span {
+  line-height: 25px;
+}
+.cash-header img,
+.cash-title img {
+  height: 25px;
+  width: 25px;
+}
+.cash-title span {
+  padding-left: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+/*# sourceMappingURL=Cash.css.map */

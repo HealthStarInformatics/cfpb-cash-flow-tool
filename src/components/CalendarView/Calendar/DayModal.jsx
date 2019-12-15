@@ -3,7 +3,7 @@ import { Redirect } from "react-router-dom";
 import { AppContext } from "../../../App";
 import { dayString } from "../../../services/dateServices";
 import { filterByDate } from "../../../services/objectServices";
-import "../../../styles/Modal.scss";
+import "../../../css/Modal.css";
 import Cash from "../../Cash/Cash";
 import { CashAvailableToday } from "../../Cash/CashAvailableToday";
 import { CloseModalButton } from "./../../shared/CloseModalButton";

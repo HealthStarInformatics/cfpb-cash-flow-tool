@@ -1,7 +1,7 @@
 import React from "react";
 
 import LinkButton from "../shared/LinkButton";
-import "../../styles/ContentMain.scss";
+import "../../css/ContentMain.css";
 
 export const ContentMain = () => {
   return (

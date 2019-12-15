@@ -1,0 +1,30 @@
+.current-month-summary-wrapper {
+  padding: 25px 0px;
+  margin-top: 25px;
+  border-top: 1px solid gray80;
+}
+.current-month-summary-wrapper .plus-minus {
+  display: flex;
+  flex-direction: row;
+}
+.current-month-summary-wrapper .underline {
+  color: blue;
+  text-decoration: underline;
+}
+.current-month-summary-wrapper .plus-minus-icon {
+  width: 25px;
+  height: 25px;
+  fill: #1579d0;
+}
+.monthly-totals-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.monthly-totals-header .show-link {
+  display: flex;
+}
+.monthly-totals-header .show-link div {
+  padding: 0px 5px;
+}
+/*# sourceMappingURL=CurrentMonthSummary.css.map */

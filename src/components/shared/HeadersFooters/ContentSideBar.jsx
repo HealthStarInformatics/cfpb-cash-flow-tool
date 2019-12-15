@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "../../../styles/ContentSideBar.scss";
+// import "../../../styles/ContentSideBar.scss";
 
 export const ContentSideBar = () => (
   <div className="content-side-bar-wrapper">

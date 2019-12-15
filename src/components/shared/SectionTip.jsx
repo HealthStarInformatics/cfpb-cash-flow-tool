@@ -2,7 +2,7 @@ import React from "react";
 
 import { Icon } from "../shared/Icon";
 
-import "../../styles/CalendarView.scss";
+// import "../../styles/CalendarView.scss";
 
 export const SectionTip = ({ text }) => (
   <div className="section-tip-wrapper">

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import img1 from "../../assets/calendar-header-img.png";
 
-import "../../styles/CalendarView.scss";
+import "../../css/CalendarView.css";
 
 export const CalendarHeader = () => (
   <div className="calendar-header-wrapper">

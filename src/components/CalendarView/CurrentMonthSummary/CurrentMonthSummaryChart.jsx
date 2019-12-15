@@ -12,7 +12,7 @@ import {
 import { AppContext } from "../../../App";
 import { ProgressBar } from "../../shared/ProgressBar";
 
-import "../../../styles/CurrentMonthSummaryChart.scss";
+import "../../../css/CurrentMonthSummaryChart.css";
 
 export const CurrentMonthSummaryChart = () => {
   const { monthlyData, selectedMonth } = useContext(AppContext);

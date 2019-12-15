@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/Divider.scss";
+// import "../../styles/Divider.scss";
 import { joinClasses } from "../../services/stringServices";
 
 export const Divider = ({ color = "light" }) => (

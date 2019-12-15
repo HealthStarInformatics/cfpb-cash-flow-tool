@@ -1,0 +1,103 @@
+.m-global-search {
+  display: block;
+}
+.m-global-search_content {
+  position: absolute;
+  left: 0;
+}
+.m-global-search_content-form {
+  width: 100%;
+}
+.global-search_content-form {
+  padding: 1.875em 0.9375em 0.9375em;
+  z-index: 10;
+  background-color: #f7f8f9;
+  border-top: 1px solid #b4b5b6;
+  border-bottom: 1px solid #b4b5b6;
+  border: 1px solid green;
+}
+.global-search_content-form .form__input-w-btn_input-container {
+  width: 70%;
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border: 3px solid green;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 75%;
+  border-right-width: 0;
+  margin-bottom: 0.9375em;
+}
+.global-search_content-form .o-form__input-w-btn_btn-container {
+  width: 30%;
+  border-left: 0;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  margin-bottom: 0.9375em;
+  vertical-align: top;
+}
+.global-search_content-form .o-form__input-w-btn_btn-container button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.o-form__input-w-btn {
+  display: block;
+  position: relative;
+  border: 2px solid red;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.m-btn-inside-input {
+  position: relative;
+}
+.input-contains-label {
+  position: relative;
+}
+.input-contains-label .a-text-input {
+  box-sizing: border-box;
+  width: 100%;
+}
+.input-contains-label_before ~ .a-text-input {
+  padding-left: 30;
+}
+.input-contains-label_after ~ .a-text-input {
+  padding-right: 30;
+}
+.input-contains-label_before {
+  left: 0.75em;
+  position: absolute;
+  top: 0.5em;
+  cursor: pointer;
+}
+.input-contains-label_before .search-icon {
+  width: 50%;
+  border: 1px solid orange;
+}
+.a-btn {
+  appearance: none;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.5em 0.875em;
+  border: 0;
+  margin: 0;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.1s;
+}
+.a-btn,
+.a-btn:link,
+.a-btn:visited {
+  background-color: #0072ce;
+  color: #fff;
+}
+/*# sourceMappingURL=SearchModalOLD.css.map */

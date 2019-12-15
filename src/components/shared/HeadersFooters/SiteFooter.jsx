@@ -4,7 +4,7 @@ import { NavLink as Link } from "react-router-dom";
 import { Icon } from "../../shared/Icon";
 import { Divider } from "../Divider";
 
-import "../../../styles/SiteFooter.scss";
+// import "../../../styles/SiteFooter.scss";
 
 export const SiteFooter = () => (
   <div className="site-footer-wrapper">

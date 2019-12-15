@@ -18,7 +18,7 @@ import { ReactComponent as SaveIcon } from "../../assets/disk.svg";
 import { ReactComponent as SearchIcon } from "../../assets/noun_Magnifying Glass_89626.png";
 import { ReactComponent as ComplaintIcon } from "../../assets/complaint.svg";
 
-import "../../styles/Icon.scss";
+// import "../../styles/Icon.scss";
 
 export const Icon = ({ type }) => {
   return (

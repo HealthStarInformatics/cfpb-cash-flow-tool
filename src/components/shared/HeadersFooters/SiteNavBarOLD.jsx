@@ -8,7 +8,7 @@ import search from "../../../assets/noun_Magnifying Glass_89626.png";
 import { Icon } from "../Icon";
 import { Search } from "./Search";
 
-import "../../../styles/SiteNavBar.scss";
+// import "../../../styles/SiteNavBar.scss";
 
 export const SiteNavBar = () => (
   <div className="sitenavbar-wrapper">

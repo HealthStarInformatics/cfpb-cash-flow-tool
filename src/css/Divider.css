@@ -1,0 +1,10 @@
+.divider.light {
+  border-bottom: 1px solid gray20;
+}
+.divider.dark {
+  border-bottom: 1px solid gray;
+}
+.divider.dotted {
+  border-bottom: 1px dotted gray;
+}
+/*# sourceMappingURL=Divider.css.map */

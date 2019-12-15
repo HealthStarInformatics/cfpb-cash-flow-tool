@@ -1,0 +1,87 @@
+.current-month-view-header-wrapper .subtitle {
+  margin-bottom: 5px;
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.wrapper .subtitle {
+  margin-bottom: 5px;
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.input {
+  border: 1px solid gray;
+  padding: 7px;
+  justify-content: space-between;
+}
+.input .row {
+  display: flex;
+  justify-content: space-between;
+}
+.input .amount {
+  font-size: 1.1rem;
+  height: 100%;
+  font-weight: 300;
+  font-family: "Avenir Next", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.input span:first-child {
+  padding-right: 5px;
+  width: 2.5rem;
+  height: 100%;
+}
+.input span:last-child {
+  width: 1.8rem;
+  height: 100%;
+}
+.input .link {
+  cursor: pointer;
+}
+.input .action-link {
+  display: flex;
+  flex-direction: row;
+  height: 1.3rem;
+  cursor: pointer;
+}
+input:focus {
+  outline: none;
+}
+.starting-balance-input {
+  border: 1px solid gray;
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.starting-balance-input .starting-balance {
+  display: flex;
+  flex-direction: row;
+}
+.starting-balance-input .starting-balance .dollar-sign-icon-wrapper {
+  display: flex;
+}
+.starting-balance-input div {
+  align-self: center;
+}
+.starting-balance-input .edit-btn {
+  display: flex;
+}
+.starting-balance-input .edit-btn div {
+  padding: 3px;
+}
+.starting-balance-modal-wrapper {
+  border-top: 2px solid darkblue;
+  border-bottom: 2px solid darkblue;
+  padding: 10px;
+}
+.starting-balance-modal-wrapper .modal-desc {
+  padding: 8px;
+}
+.starting-balance-modal-wrapper .underline {
+  text-decoration: underline;
+  color: blue;
+}
+/*# sourceMappingURL=CurrentMonthHeader.css.map */

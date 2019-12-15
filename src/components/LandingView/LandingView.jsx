@@ -7,7 +7,7 @@ import { ContentWrapper } from "./ContentWrapper";
 import { PrivacyNotice } from "../shared/HeadersFooters/PrivacyNotice";
 import { SiteFooter } from "../shared/HeadersFooters/SiteFooter";
 
-import "../../styles/LandingView.scss";
+// import "../../css/LandingView.css";
 
 // Landing View
 export const LandingView = () => (

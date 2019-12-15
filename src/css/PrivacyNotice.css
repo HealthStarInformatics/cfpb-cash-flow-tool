@@ -1,0 +1,23 @@
+.privacy-notice-wrapper {
+  padding: 20px 20px 5px 20px;
+}
+.save-work-info {
+  border: 1px solid gold;
+  background-color: gold;
+  padding: 20px;
+}
+.save-work-info div {
+  display: flex;
+}
+.save-work-info div:first-child {
+  margin-right: 5px;
+}
+.privacy-statement {
+  margin: 25px 0px 10px 0px;
+  padding-bottom: 30px;
+  border-bottom: 4px solid green;
+}
+.privacy-statement div:first-child {
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=PrivacyNotice.css.map */

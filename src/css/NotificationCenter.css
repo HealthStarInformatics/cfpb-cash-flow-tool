@@ -1,0 +1,11 @@
+.notification-center-wrapper {
+  border: 0.5px solid blue;
+  background-color: blue;
+  margin-top: 20px;
+  padding: 8px;
+}
+.notification-center-wrapper .text {
+  border: 1px solid blue;
+  line-height: 1.5rem;
+}
+/*# sourceMappingURL=NotificationCenter.css.map */

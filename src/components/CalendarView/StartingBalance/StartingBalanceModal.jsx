@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 
 import { AppContext } from "../../../App";
-import "../../../styles/Modal.scss";
+import "../../../css/Modal.css";
 
 import { CloseModalButton } from "../../shared/CloseModalButton";
 import { LabeledMoneyInput } from "../../shared/LabeledMoneyInput";

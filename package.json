@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@cfpb/design-system": "^0.0.4",
     "lodash": "^4.17.15",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
@@ -12,10 +13,10 @@
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
-    "less": "^3.9.0",
-    "less-watch-compiler": "^1.13.0",
     "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1"
+    "enzyme-adapter-react-16": "^1.15.1",
+    "less": "^3.9.0",
+    "less-watch-compiler": "^1.13.0"
   },
   "scripts": {
     "start": "react-scripts start",

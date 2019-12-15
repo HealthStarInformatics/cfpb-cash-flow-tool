@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+  color: #101820;
+  font-family: "Avenir Next Regular", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 300;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+  border-width: 0;
+  border-bottom: 1px;
+  border-style: dotted;
+  border-color: #0072ce;
+  color: #0072ce;
+}
+a:visited,
+a.visited {
+  border-color: #257675;
+  color: #257675;
+}
+.a-text-input {
+  display: inline-block;
+  padding: 0.4375em;
+  border: 1px solid #919395;
+  background: #fff;
+  color: #101820;
+}
+.a-btn {
+  display: inline-block;
+  padding: 0.5em 0.875em;
+  border: 0;
+  margin: 0;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+  background-color: #0072ce;
+  color: #fff;
+}
+.cash-available {
+  font-size: 1.4rem;
+  font-weight: 500;
+  background: lightgray;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid;
+}
+.cash-available.green {
+  background-color: green;
+  border-color: green;
+}
+.cash-available.red {
+  background-color: purple;
+  border-color: purple;
+}
+button {
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  padding: 15px;
+}
+button.primary {
+  background: blue;
+}
+button.secondary {
+  background: gray;
+}
+button.with-margin {
+  margin: 25px;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.Nav_link {
+  cursor: pointer;
+}
+.Nav_link:link {
+  color: blue;
+  cursor: pointer;
+}
+.Nav_link:active {
+  color: blue;
+  cursor: pointer;
+}
+.Nav_link:visited {
+  color: blue;
+  cursor: pointer;
+}
+.page-title {
+  font-size: 1.3rem;
+  font-weight: 550;
+}
+.page-subtitle {
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.hero_heading-wrapper {
+  width: 100%;
+}
+.hero-heading {
+  margin-bottom: 0.44117647em;
+  font-size: 2.125em;
+  font-weight: normal;
+  letter-spacing: initial;
+  line-height: 1.25;
+  text-transform: initial;
+}
+.hero_subhead {
+  font-size: 22px;
+  line-height: 1.25;
+}
+.hero_image-wrapper {
+  width: 100%;
+  align-self: center;
+}
+.hero_image-wrapper .hero-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 26px;
+    font-weight: 300;
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  .hero_heading-wrapper {
+    width: 60%;
+  }
+  .hero_image-wrapper {
+    width: 39%;
+    position: relative;
+  }
+}
+/*# sourceMappingURL=App.css.map */

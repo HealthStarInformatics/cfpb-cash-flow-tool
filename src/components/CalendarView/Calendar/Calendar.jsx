@@ -12,7 +12,7 @@ import {
   MAX_DAYS_IN_MONTH
 } from "../../../services/dateServices";
 import { filterByDate } from "../../../services/objectServices";
-import "../../../styles/Calendar.scss";
+import "../../../css/Calendar.css";
 import { DayModal } from "./DayModal";
 import { CalendarBody } from "./CalendarBody";
 import { CalendarDay, CalendarDayPlaceholder } from "./CalendarDay";

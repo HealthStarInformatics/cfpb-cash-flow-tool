@@ -1,0 +1,45 @@
+.sitenavbar-wrapper {
+  height: 60px;
+  width: 100vw;
+  border-bottom: 4px solid green;
+}
+.sitenavbar-component-body {
+  height: 60px;
+  width: 100%;
+  border: 1px solid;
+}
+.sitenavbar-mobile {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.sitenavbar-tablet {
+  display: none;
+}
+.sitenavbar-desktop {
+  display: none;
+}
+.sitebar-logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  border: 1px solid orange;
+}
+.sitebar-search-wrapper {
+  border: 1px solid orange;
+}
+.image-container-menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 8px;
+  border-right: 1px solid gray;
+}
+.menu-icon {
+  height: 100%;
+}
+.image-container-logo .cf-logo-small {
+  height: 100%;
+  padding: 7px;
+}
+/*# sourceMappingURL=SiteNavBarOLD.css.map */
