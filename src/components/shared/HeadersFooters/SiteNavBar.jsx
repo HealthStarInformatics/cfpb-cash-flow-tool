@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
-// import menu from "../../../assets/noun_menu_89650.png";
-import logo from "../../../assets/Logo1_horizontal-lockup_@2.png";
-// import search from "../../../assets/noun_Magnifying Glass_89626.png";
+import logo from "../../../assets/cfpb-logo.png";
 
 import { SearchModal } from "./SearchModal";
 import { Icon } from "../Icon";
