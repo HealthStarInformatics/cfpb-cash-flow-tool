@@ -1,24 +1,17 @@
-.landing-view-hero-wrapper {
-  display: flex;
-  background-color: blue;
-  padding: 25px 13px 60px;
+#hero1 .m-hero_image {
+  background-image: url("../assets/hero-570x236.png");
+  background-image: -webkit-image-set(url("../assets/hero-570x236.png") 1x, url("../assets/hero-1140x472.png") 2x);
+  background-image: image-set(url("../assets/hero-570x236.png") 1x, url("../assets/hero-1140x472.png") 2x);
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../assets/hero-570x236.png", sizingMethod='scale');
+  padding-bottom: 41.4893617%;
 }
-.landing-view-hero-wrapper .component-body {
-  display: flex;
-  flex-direction: column;
-}
-.get-started-btn {
-  background-color: blue;
-  padding: 13px 0px;
-}
-@media screen and (min-width: 601px) {
-  .landing-view-hero-wrapper {
-    display: flex;
-  }
-  .landing-view-hero-wrapper .component-body {
-    flex-direction: row;
-    margin: 0 auto;
-    max-width: 1200px;
+@media screen and (min-width: 37.5625em) {
+  #hero1 .m-hero_image {
+    background-image: url("../assets/hero-470x195.png");
+    background-image: -webkit-image-set(url("../assets/hero-470x195.png") 1x, url("../assets/hero-940x390.png") 2x);
+    background-image: image-set(url("../assets/hero-470x195.png") 1x, url("../assets/hero-940x390.png") 2x);
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://dummyimage.com/470x195/addc91/101820', sizingMethod='scale');
+    padding-bottom: 41.4893617%;
   }
 }
 /*# sourceMappingURL=LandingViewHero.css.map */
