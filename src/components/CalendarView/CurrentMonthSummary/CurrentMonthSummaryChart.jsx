@@ -9,10 +9,10 @@ import {
   savingsTotal,
   expenseTotal
 } from "../../../services/cashFlowServices.js";
-import { AppContext } from "../../../App";
+import { AppContext } from "../../App";
 import { ProgressBar } from "../../shared/ProgressBar";
 
-import "../../../css/CurrentMonthSummaryChart.css";
+// import "../../../css/CurrentMonthSummaryChart.css";
 
 export const CurrentMonthSummaryChart = () => {
   const { monthlyData, selectedMonth } = useContext(AppContext);

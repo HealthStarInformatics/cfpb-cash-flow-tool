@@ -1,7 +1,9 @@
 import React from "react";
 import { joinClasses } from "../../../services/stringServices";
-import { ReactComponent as DollarIcon } from "../../../assets/dollar-icon.svg";
-import { ReactComponent as MinusIcon } from "../../../assets/minus-icon.svg";
+
+import { Icon } from "../../shared/Icon";
+// import { ReactComponent as DollarIcon } from "../../../assets/dollar-icon.svg";
+// import { ReactComponent as MinusIcon } from "../../../assets/minus-icon.svg";
 
 /**
  * CalendarDay
@@ -31,7 +33,7 @@ export const CalendarDay = ({
 
   const classes = joinClasses(["day", classHasEntries, classHasCash]);
 
-  const Icon = hasCash ? DollarIcon : MinusIcon;
+  const type = hasCash ? "dollar-sign-icon" : "minus-sign-icon";
 
   const handleClick = () => {
     setState({
@@ -47,7 +49,7 @@ export const CalendarDay = ({
       {showCashStyling && <div className="dots">•••••</div>}
       {showCashStyling && (
         <div className="symbol">
-          <Icon />
+          <Icon type={type} />
         </div>
       )}
     </div>

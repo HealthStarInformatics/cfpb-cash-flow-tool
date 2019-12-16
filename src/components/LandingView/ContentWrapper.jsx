@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ContentMain } from "../../components/LandingView/ContentMain";
+// import { ContentMain } from "../../components/LandingView/ContentMain";
 // import { ContentSideBar } from "..css";
 
 export const ContentWrapper = () => {

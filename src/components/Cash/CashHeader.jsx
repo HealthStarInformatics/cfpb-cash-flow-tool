@@ -1,5 +1,5 @@
 import React from "react";
-import closeIcon from "../../assets/close-icon.png";
+import { Icon } from "../shared/Icon";
 
 export const CashHeader = ({ icon, title, editing, setEditing }) => (
   <div className="cash-header">
@@ -10,7 +10,9 @@ export const CashHeader = ({ icon, title, editing, setEditing }) => (
     {editing && (
       <div className="text-button" onClick={() => setEditing(false)}>
         <span>Cancel</span>
-        <img src={closeIcon} alt="circled x" />
+        <span>
+          <Icon type="close-icon" />
+        </span>
       </div>
     )}
   </div>

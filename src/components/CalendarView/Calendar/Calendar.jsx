@@ -1,6 +1,6 @@
 import { isEmpty } from "lodash";
 import React, { useContext } from "react";
-import { AppContext } from "../../../App";
+import { AppContext } from "../../App";
 import { range } from "../../../services/arrayServices";
 import {
   createWeekRows,
@@ -12,7 +12,7 @@ import {
   MAX_DAYS_IN_MONTH
 } from "../../../services/dateServices";
 import { filterByDate } from "../../../services/objectServices";
-import "../../../css/Calendar.css";
+// import "../../../css/Calendar.css";
 import { DayModal } from "./DayModal";
 import { CalendarBody } from "./CalendarBody";
 import { CalendarDay, CalendarDayPlaceholder } from "./CalendarDay";

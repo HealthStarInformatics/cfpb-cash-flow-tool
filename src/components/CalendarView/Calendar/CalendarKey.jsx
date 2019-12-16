@@ -1,6 +1,8 @@
 import React from "react";
-import { ReactComponent as DollarIcon } from "../../../assets/dollar-icon.svg";
-import { ReactComponent as MinusIcon } from "../../../assets/minus-icon.svg";
+// import { ReactComponent as DollarIcon } from "../../../assets/dollar-icon.svg";
+// import { ReactComponent as MinusIcon } from "../../../assets/minus-icon.svg";
+
+import { Icon } from "../../shared/Icon";
 
 /**
  * Displays what the Calendar symbols mean
@@ -12,11 +14,15 @@ export const CalendarKey = ({ show }) => {
   return (
     <div className="calendar-key">
       <div className="item cash">
-        <DollarIcon />
+        <span>
+          <Icon type="dollar-sign-icon" />
+        </span>
         <div>Available cash</div>
       </div>
       <div className="item nocash">
-        <MinusIcon />
+        <span>
+          <Icon type="minus-sign-icon" />
+        </span>
         <div>No available cash</div>
       </div>
       <div className="item has-entries">

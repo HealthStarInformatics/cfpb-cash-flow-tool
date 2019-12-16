@@ -2,7 +2,7 @@ import React from "react";
 
 import img1 from "../../assets/landing-page-hero-img.png";
 
-import "../../css/LandingViewHero.css";
+// import "../../css/LandingViewHero.css";
 
 export const LandingViewHero = () => {
   return (

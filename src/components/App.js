@@ -1,14 +1,14 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { CalendarView } from "./components/CalendarView/CalendarView";
-import { DayModal } from "./components/CalendarView/Calendar/DayModal";
-import { LandingView } from "./components/LandingView/LandingView";
-import { MonthSelectView } from "./components/MonthSelectView/MonthSelectView";
-import { StrategyView } from "./components/StrategyView/StrategyView";
+import { CalendarView } from "./CalendarView/CalendarView";
+import { DayModal } from "./CalendarView/Calendar/DayModal";
+import { LandingView } from "./LandingView/LandingView";
+import { MonthSelectView } from "./MonthSelectView/MonthSelectView";
+import { StrategyView } from "./StrategyView/StrategyView";
 // import { exampleMonthlyData } from "./mockData";
 
-import "./css/App.css";
-import { getFromStorage, saveToStorage } from "../src/services/storageServices";
+import "../css/App.css";
+import { getFromStorage, saveToStorage } from "../services/storageServices";
 
 export const AppContext = React.createContext();
 

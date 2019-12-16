@@ -1,5 +1,5 @@
 import React from "react";
-import starImage from "../../assets/gold-star-icon.png";
+import { Icon } from "../shared/Icon";
 
 export const StrategyCardAction = ({ text, questions, finalThought }) => (
   <div className="strategy-card-action">
@@ -11,7 +11,9 @@ export const StrategyCardAction = ({ text, questions, finalThought }) => (
 
 export const StrategyCardTip = ({ text }) => (
   <div className="tip">
-    <img className="star-icon" src={starImage} alt="gold star" />
+    <span>
+      <Icon type="star-icon" />
+    </span>
     {text}
   </div>
 );

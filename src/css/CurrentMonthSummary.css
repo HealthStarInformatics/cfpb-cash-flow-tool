@@ -11,7 +11,12 @@
   color: blue;
   text-decoration: underline;
 }
-.current-month-summary-wrapper .plus-minus-icon {
+.current-month-summary-wrapper .plus-icon {
+  width: 25px;
+  height: 25px;
+  fill: #1579d0;
+}
+.current-month-summary-wrapper .minus-icon {
   width: 25px;
   height: 25px;
   fill: #1579d0;

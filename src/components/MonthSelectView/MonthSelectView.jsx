@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Select from "react-select";
-import { AppContext } from "../../App";
+import { AppContext } from "../App";
 import headerImg from "../../assets/month-select-header.png";
 import { generateMonthOptions } from "../../services/dateServices";
-import "../../css/View.css";
+// import "../../css/View.css";
 import { PrivacyNotice } from "../shared/HeadersFooters/PrivacyNotice";
 import { Divider } from "../shared/Divider";
 import { SiteFooter } from "../shared/HeadersFooters/SiteFooter";

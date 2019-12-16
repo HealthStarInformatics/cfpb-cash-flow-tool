@@ -1,9 +1,12 @@
 import React from "react";
-import closeIcon from "../../assets/close-icon.png";
+
+import { Icon } from "../shared/Icon";
 
 export const CloseModalButton = ({ closeModal }) => (
   <div className="text-button close-modal" onClick={closeModal}>
     <span>Close</span>
-    <img src={closeIcon} alt="circled x" />
+    <span>
+      <Icon type="close-icon" />
+    </span>
   </div>
 );

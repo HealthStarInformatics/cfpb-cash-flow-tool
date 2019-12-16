@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import { formatCurrency } from "../../../services/currencyServices";
-import { AppContext } from "../../../App";
+import { AppContext } from "../../App";
 
 const CashAvailableMonth = () => {
   const { monthlyData, selectedMonth } = useContext(AppContext);

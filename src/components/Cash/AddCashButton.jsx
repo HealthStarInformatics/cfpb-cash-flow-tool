@@ -1,5 +1,5 @@
 import React from "react";
-import plusIcon from "../../assets/plus-icon.png";
+import { Icon } from "../shared/Icon";
 
 export const AddCashButton = ({
   addButtonText,
@@ -12,7 +12,9 @@ export const AddCashButton = ({
     onClick={() => handleClick(setEditing, setSelected, date)}
   >
     <span>{addButtonText}</span>
-    <img src={plusIcon} alt="circled plus" />
+    <span>
+      <Icon type="plus-icon" />
+    </span>
   </div>
 );
 

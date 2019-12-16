@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "../../../css/CurrentMonthSummary.css";
+// import "../../../css/CurrentMonthSummary.css";
 
 import { CurrentMonthSummaryChart } from "../CurrentMonthSummary/CurrentMonthSummaryChart";
 import { ActionLink } from "../../shared/ActionLink";

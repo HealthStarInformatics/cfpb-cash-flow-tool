@@ -1,8 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 
-import search from "../../../assets/noun_Magnifying Glass_89626.png";
-// import { Icon } from "../Icon";
+import { Icon } from "../Icon";
 
 // import "../../../styles/SearchModal.scss";
 
@@ -26,11 +25,9 @@ export const SearchModal = closeModal => (
           <div className="o-form__input-w-btn">
             <div className="o-form__input-w-btn_input-container">
               <div className="btn-inside-input input-contains label">
-                <img
-                  className="image search-icon"
-                  src={search}
-                  alt="search magnifying glass"
-                ></img>
+                <span>
+                  <Icon type="search-icon" />
+                </span>
 
                 <input
                   id="global-search_query"
